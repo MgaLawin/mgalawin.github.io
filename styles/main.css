@@ -6,7 +6,6 @@
   box-sizing: border-box;
   border: 1px solid #bbb;
   padding: 5px;
-  padding-left: 20px;
   background-color: #eee;
   line-height: 1.5em;
 }
@@ -16,6 +15,10 @@ body {
   line-height: 28px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #6495ED;
+}
+
+nav {
+  padding-left: 20px
 }
 
 h1 {
