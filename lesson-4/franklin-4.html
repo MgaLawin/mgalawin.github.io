@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin City</title>
+    <meta name="description" content="Franklin City Detailed Weather Page | Jeremy Hawks.">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <img src="images/franklinwinter-640x400.jpg" width="320" height="200" alt="Franklin City View in Winter">
+      <h1>What to Expect Outside</h1>
+      <div class="subheading">You won't be disappointed with the weather here!</div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="home-4.html">Home</a></li>
+        <li><a href="franklin-4.html">Franklin</a></li>
+        <li><a href="greenville-4.html">Greenville</a></li>
+        <li><a href="springfield-4.html">Springfield</a></li>
+        <li><a href="stormcenter-4.html">Storm Center</a></li>
+        <li><a href="gallery-4.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Franklin</h2>
+      <section1>
+        <h3>Weather Data</h3>
+      </section1>
+      <section2>
+        <h3>10 Day Forecast</h3>
+      </section2>
+      <section3>
+        <img src="images/franklinweather-640x426.jpg" width="320" height="213" alt="Franklin Weather snow covered statue">
+      </section3>
+      <section4>
+        <h3>Winter Storm to Freeze Hearts on Valentine's Day!</h3>
+        <img src="images/frozenheart-640x480.jpg" width="320" height="240" alt="Frozen shattering heart">
+        <p>Expect old man winter to be freezing the hearts of would be suitors this Valentine's Day...</p>
+      </section4>
+    </main>
+    <footer>
+      <aside>123 Anywhere St., <br>
+        Franklin MU 53454 <br>
+        (999) 999-9999 <br>
+        contact@expectations.com
+      </aside>
+      <p class="footer-bar">&copy;2018 | What to Expect Outside | <span id="currentdate"></span></p>
+      <script>
+        var dt = new Date();
+        document.getElementById("currentdate").innerHTML = dt.toLocaleDateString();
+      </script>
+    </footer>
+  </body>
+</html>

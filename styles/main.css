@@ -3,8 +3,8 @@
 
 /* * is a wildcard referring to all elements. */
 * { margin: 0;
-  /* box-sizing: border-box;
-  border: 5px solid #bbb;
+  box-sizing: border-box;
+  /* border: 5px solid #bbb;
   padding: 5px;
   background-color: #eee;
   line-height: 1.5em; */
