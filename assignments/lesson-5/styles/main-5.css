@@ -1,0 +1,145 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+  box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+  /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+
+header h1 {
+  font-family: 'Archivo Black';
+  font-size: 26px;
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+}
+
+header .subheading {
+  font-family: 'Arima Madurai';
+  font-size: 20px;
+  text-align: center;
+}
+
+nav {}
+
+nav button {}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #b30047;
+}
+
+nav ul li {}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Arsenal';
+  font-style: oblique;
+  font-size: 20px;
+  padding: 8px 16px;
+}
+
+nav ul li a:hover {
+  background-color: #ff0066;
+}
+
+nav ul li.active a {
+  background-color: #800033
+}
+
+main {}
+
+main h2 {
+  font-family: 'Archivo Black';
+  font-size: 20px;
+  text-align: center;
+}
+
+main h3 {
+  font-family: 'Archivo Black';
+  font-size: 16px;
+}
+
+main figure {
+  margin: 0 0 .2rem 2%;
+  width: 96%;
+}
+
+main figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+}
+
+main section h3 {
+  text-align: center;
+}
+
+main section picture {
+  float: left;
+  margin: 1em;
+  margin-left: 28%;
+}
+
+section {}
+
+
+section.forecast {
+  display: none;
+}
+
+article h3 {
+  text-align: center;
+}
+
+article p {
+  padding: 1px 16px 1px 16px;
+}
+
+article p.town-article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+}
+
+footer {
+  background-color: #8fc31f
+}
+
+footer aside {
+  text-align: center;
+}
+
+footer > p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
