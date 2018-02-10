@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 nav ul li.active a {
-  background-color: #800033
+  background-color: #800033;
 }
 
 main {}
@@ -143,7 +143,7 @@ article p.town-article img {
 }
 
 footer {
-  background-color: #8fc31f
+  background-color: #8fc31f;
 }
 
 footer aside {

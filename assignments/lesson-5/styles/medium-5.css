@@ -37,18 +37,29 @@
     display: none;
   }
   /* hamburger button does not need to be shown */
+
+  main {
+    position: relative;
+  }
+
   main h2 {
-    clear: both;
-    padding: 16px 0px 0px 0px;
-    float: left;
+    position: relative;
+    top: 10px;
+    left: 35px;
+    width: 330px;
+    height: 30px;
     text-align: center;
-    width: 50%;
   }
 
   main figure {
-    float: left;
     padding: 1px 0px 0px 0px;
-    width: 49%
+    position: relative;
+    top: 50px;
+    left: 10px;
+    width: 330px;
+    height: 30px;
+    z-index: -1;
+    text-align: center;
   }
 
   main section h3 {}
@@ -56,7 +67,9 @@
   section.summary {
     padding: 0px 1px 1px 1px;
     float: right;
-    width: 40%
+    height: 270px;
+    margin-right: 5%;
+    min-width: 40%;
   }
 
   section.forecast {
@@ -65,7 +78,7 @@
 
   section.forecast h3 {
     clear: both;
-    padding: 30px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
   }
 
   section.forecast table {

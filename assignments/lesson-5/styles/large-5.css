@@ -1,30 +1,32 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-  main h2 {
-    max-width: 30%;
-    position: absolute;
-    left: 0px;
-    top: 270px;
-    z-index: -1;
+  main section.summary h3 {
+    position: relative;
+    width: 66%;
+    left: 120px;
   }
 
-  main figure {
-    max-width: 30%;
+  section.summary {
+    position: relative;
+    width: 100%;
+    left: 120px;
   }
 
-  main section h3 {}
+  section.forecast {
+    position: relative;
+    max-width: 33%;
+    margin-left: 66%;
+    margin-right: 5%;
+    top: -260px;
+  }
 
-  section.summary {}
+  article {
+    position: relative;
+    top: -150px;
+  }
 
-  section.forecast {}
-
-  section.forecast h3 {}
-
-  section.forecast table {}
-
-  section.forecast table th,
-  td {}
-
-  article p.town-article img {}
-
+  footer {
+    position: relative;
+    top: -150px;
+  }
 }
