@@ -59,10 +59,15 @@ nav ul li a {
   text-align: center;
   text-decoration: none;
   color: #fff;
+  border-bottom: 2px solid #800033;
   font-family: 'Arsenal';
   font-style: oblique;
-  font-size: 20px;
+  font-size: 16px;
   padding: 8px 16px;
+}
+
+nav ul li.sixth a {
+  border-bottom: none;
 }
 
 nav ul li a:hover {
@@ -98,6 +103,11 @@ main figure img {
   max-width: 95%;
 }
 
+section.summary {
+  padding: 20px 1px 1px 1px;
+}
+
+
 main section h3 {
   text-align: center;
 }
@@ -117,6 +127,7 @@ section.forecast {
 
 article h3 {
   text-align: center;
+  padding: 20px 1px 1px 11px;
 }
 
 article p {
@@ -128,6 +139,7 @@ article p.town-article img {
   margin-left: auto;
   margin-right: auto;
   max-width: 95%;
+  padding: 0 0 20px 0;
 }
 
 footer {
@@ -136,6 +148,7 @@ footer {
 
 footer aside {
   text-align: center;
+  padding: 10px 0 0 0;
 }
 
 footer > p {}

@@ -1,29 +1,108 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   header img {
-    margin: 1px 16px 16px 16px;
-    float: left
+    margin: 1px 16px 2px 16px;
+    float: left;
   }
 
   header h1 {
+    padding: 70px 1px 1px 1px;
+  }
+
+  nav {
     margin: 1px 1px 1px 1px;
+    width: 100%;
+    float: left;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+  nav ul li a {
+    display: inline;
+    padding: 8px;
+    font-size: 30px;
+    border-right: 8px solid #800033;
+    border-bottom: none;
+  }
+
+  nav ul li.sixth a {
+    border-right: none;
   }
 
   nav button {
     display: none;
   }
   /* hamburger button does not need to be shown */
-  nav ul li {
-    display: inline;
+  main h2 {
+    clear: both;
+    padding: 16px 0px 0px 0px;
+    float: left;
+    text-align: center;
+    width: 50%;
+  }
+
+  main figure {
+    float: left;
+    padding: 1px 0px 0px 0px;
+    width: 50%
+  }
+
+  main section h3 {}
+
+  section.summary {
+    float: right;
+    width: 40%
   }
 
   section.forecast {
     display: block;
   }
+
+  section.forecast h3 {
+    clear: both;
+    padding: 30px 0px 0px 0px;
+  }
+
+  section.forecast table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+  }
+
+  section.forecast table th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
   /* show the 10-day forecast with the medium view and up */
+  article h3 {
+    padding: 20px 0px 0px 0px;
+  }
+
+  article p.town-article {
+    padding: 1px 5px 1px 20px;
+  }
+
   article p.town-article img {
-    width: 62.666%;
+    width: 160px;
+    height: 100px;
     float: right;
+    padding: 0px 0px 0px 20px;
   }
   /* responsive images */
+  footer {
+    margin: 20px 1px 1px 1px;
+    width: 100%;
+    float: left;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+  }
 }
