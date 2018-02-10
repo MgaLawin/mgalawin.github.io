@@ -24,7 +24,6 @@
 
   nav ul li a {
     display: inline;
-    padding: 8px;
     font-size: 25px;
     border-right: 8px solid #800033;
     border-bottom: none;
@@ -49,12 +48,13 @@
   main figure {
     float: left;
     padding: 1px 0px 0px 0px;
-    width: 50%
+    width: 49%
   }
 
   main section h3 {}
 
   section.summary {
+    padding: 0px 1px 1px 1px;
     float: right;
     width: 40%
   }

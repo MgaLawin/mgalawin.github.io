@@ -1,7 +1,30 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-  article p.town-article img {
-    width: 29.333%;
+  main h2 {
+    max-width: 30%;
+    position: absolute;
+    left: 0px;
+    top: 270px;
+    z-index: -1;
   }
+
+  main figure {
+    max-width: 30%;
+  }
+
+  main section h3 {}
+
+  section.summary {}
+
+  section.forecast {}
+
+  section.forecast h3 {}
+
+  section.forecast table {}
+
+  section.forecast table th,
+  td {}
+
+  article p.town-article img {}
 
 }
