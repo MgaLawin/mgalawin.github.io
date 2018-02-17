@@ -19,8 +19,6 @@ footer {
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-header {}
-
 header h1 {
   font-family: 'Archivo Black';
   font-size: 26px;
@@ -40,10 +38,6 @@ header .subheading {
   text-align: center;
 }
 
-nav {}
-
-nav button {}
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -51,8 +45,6 @@ nav ul {
   width: 100%;
   background-color: #b30047;
 }
-
-nav ul li {}
 
 nav ul li a {
   display: block;
@@ -77,8 +69,6 @@ nav ul li a:hover {
 nav ul li.active a {
   background-color: #800033;
 }
-
-main {}
 
 main h2 {
   font-family: 'Archivo Black';

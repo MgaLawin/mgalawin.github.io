@@ -2,8 +2,6 @@
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   header img {
     margin: 1px 16px 2px 16px;
-    max-width: 320px;
-    float: left;
   }
 
   header h1 {
