@@ -19,8 +19,6 @@ footer {
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-header {}
-
 header h1 {
   font-family: 'Archivo Black';
   font-size: 26px;
@@ -117,9 +115,6 @@ main section picture {
   margin: 1em;
   margin-left: 28%;
 }
-
-section {}
-
 
 section.forecast {
   display: none;

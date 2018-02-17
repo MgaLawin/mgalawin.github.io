@@ -2,11 +2,14 @@
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   header img {
     margin: 1px 16px 2px 16px;
+    max-width: 320px;
     float: left;
   }
 
   header h1 {
     padding: 70px 1px 1px 1px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   nav {
@@ -37,7 +40,6 @@
     display: none;
   }
   /* hamburger button does not need to be shown */
-
   main {
     position: relative;
   }
@@ -46,7 +48,7 @@
     position: relative;
     top: 10px;
     left: 35px;
-    width: 330px;
+    width: 50%;
     height: 30px;
     text-align: center;
   }
