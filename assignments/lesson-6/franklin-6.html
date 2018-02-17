@@ -24,13 +24,16 @@
 
   <header class="clearfix">
 
-    <img src="images/w06-franklin-original-480x233.jpg" alt="Sunny in Franklin">
+    <picture>
+      <source media="(max-width: 37.5em)" srcset="images/w06-franklin-original-480x233.jpg" alt="Sunny in Franklin">
 
-    <source media="(max-width: 37.5em)" srcset="images/w06-franklin-original-480x233.png" alt="Sunny in Franklin">
+      <source media="(max-width: 64em)" srcset="images/w06-franklin-original-800x263.jpg" alt=" Sunny in Franklin ">
 
-    <source media="(max-width: 64em)" srcset="images/w06-franklin-original-800x838.png" alt=" Sunny in Franklin ">
+      <source media="(max-width: 200em)" srcset="images/w06-franklin-original-1850x571.jpg" alt="Sunny in Franklin">
 
-    <source media="(max-width: 100em)" srcset="images/w06-franklin-original-1850x898.png" alt="Sunny in Franklin">
+      <img src="images/w06-franklin-original-480x233.jpg" alt="Sunny in Franklin">
+
+    </picture>
 
     <h1>What Weather to Expect in Franklin</h1>
 
@@ -125,9 +128,7 @@
   </footer>
 
   <script src="scripts/hamburger.js "></script>
-  <script src="scripts/currentdate.js ">
-    inputCurrentDate()
-  </script>
+  <script src="scripts/currentdate.js "></script>
 
 </body>
 
