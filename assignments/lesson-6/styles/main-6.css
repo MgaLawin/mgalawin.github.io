@@ -70,6 +70,10 @@ nav ul li.active a {
   background-color: #800033;
 }
 
+nav ul.hidden {
+  display: none;
+}
+
 main h2 {
   font-family: 'Archivo Black';
   font-size: 20px;
@@ -138,8 +142,6 @@ footer aside {
   text-align: center;
   padding: 10px 0 0 0;
 }
-
-footer > p {}
 
 /* This structure refers to p elements that are direct children of the footer element */
 

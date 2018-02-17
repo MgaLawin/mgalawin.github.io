@@ -34,6 +34,9 @@
     display: none;
   }
   /* hamburger button does not need to be shown */
+  nav ul.hidden {
+    display: block;
+  }
   main h2 {
     float: left;
     width: 50%;
