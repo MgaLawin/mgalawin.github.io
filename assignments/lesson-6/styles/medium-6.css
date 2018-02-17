@@ -1,8 +1,7 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-
   header h1 {
-    padding: 10px 1px 1px 1px;
+    clear: padding: 10px 1px 1px 1px;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -35,42 +34,32 @@
     display: none;
   }
   /* hamburger button does not need to be shown */
-  main {
-    position: relative;
-  }
-
   main h2 {
-    position: relative;
-    top: 10px;
-    left: 35px;
+    float: left;
     width: 50%;
     height: 30px;
     text-align: center;
   }
 
   main figure {
-    padding: 1px 0px 0px 0px;
-    position: relative;
-    top: 50px;
-    left: 10px;
-    max-width:  900px;
-    height: 194px;
-    z-index: -1;
-    text-align: center;
+    clear: both;
+    float: left;
+    max-width: 50%;
   }
 
-  main section h3 {}
-
   section.summary {
-    padding: 0px 1px 1px 1px;
-    float: right;
-    height: 270px;
-    margin-right: 5%;
-    min-width: 40%;
+    display: inline;
+    height: 350px;
+    max-width: 40%;
+  }
+
+  main section picture {
+    height: 200px;
+    margin: 1em;
   }
 
   section.forecast {
-    display: block;
+    display: inline;
   }
 
   section.forecast h3 {
