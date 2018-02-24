@@ -43,7 +43,7 @@ nav ul {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #b30047;
+  background-color: #55aa55;
 }
 
 nav ul li a {
@@ -52,7 +52,7 @@ nav ul li a {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  border-bottom: 2px solid #800033;
+  border-bottom: 2px solid #004400;
   font-family: 'Arsenal';
   font-style: oblique;
   font-size: 16px;
@@ -64,15 +64,22 @@ nav ul li.sixth a {
 }
 
 nav ul li a:hover {
-  background-color: #ff0066;
+  background-color: #88cc88;
 }
 
 nav ul li.active a {
-  background-color: #800033;
+  background-color: #004400;
 }
 
 nav ul.hidden {
   display: none;
+}
+
+main h1 {
+  font-family: 'Archivo Black';
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
 }
 
 main h2 {
@@ -99,19 +106,21 @@ main figure img {
   max-width: 85%;
 }
 
-section.summary {
+.weathersum {
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px 1px 1px 1px;
   height: 300px;
 }
 
 main section h3 {
   text-align: center;
+  width: 100%;
 }
 
-main section picture {
+.pic2 {
   float: left;
   margin: 1em;
-  margin-left: 25%;
 }
 
 section.forecast {
@@ -125,28 +134,28 @@ article h3 {
   padding: 1px 1px 1px 11px;
 }
 
-article p {
-  padding: 1px 16px 1px 16px;
+article picture {
+  display: flex;
+  margin: 0 2% .2rem 2%;
+  width: 100%;
+  justify-content: center;
 }
 
-article p.town-article img {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 95%;
-  padding: 0 0 20px 0;
+article p {
+  padding: 1px 16px 1px 16px;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 400px;
   grid-gap: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .weather {
   display: grid;
-  height: 450px;
+  height: auto;
 }
 
 .weather-pic {
@@ -159,15 +168,18 @@ article p.town-article img {
 
 .weather-title p {
   font-size: 1.3em;
-  text-align: center;
+  text-align: justify;
+  padding: 0 10px 0 10px;
 }
 
 footer {
-  background-color: #8fc31f;
+  background-color: #116611;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
 }
 
 footer aside {
-  text-align: center;
   padding: 10px 0 0 0;
 }
 
