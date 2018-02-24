@@ -1,0 +1,53 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  header h1 {
+    padding: 10px 1px 1px 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  nav ul.flex-container {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul li a {
+    font-size: 25px;
+    padding: 8px 16px;
+    border-bottom: none;
+  }
+
+  nav button {
+    display: none;
+  }
+  /* hamburger button does not need to be shown */
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .citypic {
+    order: 1;
+  }
+
+  .weathersum {
+    order: 2;
+  }
+
+  .forecast {
+    order: 3;
+  }
+
+  .article1 {
+    order: 4;
+  }
+
+  section.forecast {
+    display: flex;
+  }
+
+  .weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }

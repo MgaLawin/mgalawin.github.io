@@ -1,0 +1,176 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+  box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+  /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+header h1 {
+  font-family: 'Archivo Black';
+  font-size: 26px;
+  text-align: center;
+}
+
+header .subheading {
+  font-family: 'Arima Madurai';
+  font-size: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #b30047;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid #800033;
+  font-family: 'Arsenal';
+  font-style: oblique;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+nav ul li.sixth a {
+  border-bottom: none;
+}
+
+nav ul li a:hover {
+  background-color: #ff0066;
+}
+
+nav ul li.active a {
+  background-color: #800033;
+}
+
+nav ul.hidden {
+  display: none;
+}
+
+main h2 {
+  font-family: 'Archivo Black';
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+main h3 {
+  font-family: 'Archivo Black';
+  font-size: 16px;
+}
+
+main figure {
+  margin: 0 2% .2rem 2%;
+  width: 100%;
+}
+
+main figure img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+}
+
+section.summary {
+  padding: 20px 1px 1px 1px;
+  height: 300px;
+}
+
+main section h3 {
+  text-align: center;
+}
+
+main section picture {
+  float: left;
+  margin: 1em;
+  margin-left: 25%;
+}
+
+section.forecast {
+  display: none;
+}
+
+article h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1px 1px 1px 11px;
+}
+
+article p {
+  padding: 1px 16px 1px 16px;
+}
+
+article p.town-article img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  padding: 0 0 20px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px;
+  grid-gap: 25px;
+}
+
+.weather {
+  display: grid;
+  height: 450px;
+}
+
+.weather-pic {
+  max-width: 100%;
+}
+
+.weather-title {
+  font-size: 14px;
+}
+
+.weather-title p {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+footer {
+  background-color: #8fc31f;
+}
+
+footer aside {
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
