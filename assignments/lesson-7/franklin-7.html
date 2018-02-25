@@ -53,37 +53,35 @@
   </nav>
 
   <main class="wrapper">
-    <section class="citypic">
-      <h2 class="mainheader1">The City of Franklin</h2>
-      <figure class="pic1">
-        <img src="images/franklinweather-640x426.jpg " alt="Snow covered statue in Franklin">
-      </figure>
-    </section>
-    <section class="weathersum">
-      <h3 class="mainheader2">Weather Summary</h3>
-      <picture class="pic2">
-        <img src="images/cold-figure-thermometer-134x200.jpg" alt="cold figure holding thermometer">
-      </picture>
-      <div class="summary">
-        <!--<br>High: 30&deg;F<br><br> Low: 18&deg;F<br><br> Sunny and cold<br><br> Precipitation: 0%<br><br> Wind Speed: 10mph SW<br><br> -->
-        <div class="hightemp">
-          <p>High: 30&deg;F</p>
-        </div>
-        <div class="lowtemp">
-          <p>Low: 18&deg;F</p>
-        </div>
-        <div class="currentweather">
-          Sunny and cold
-        </div>
-        <div class="precip">
-          <p>Precipitation: 0%</p>
-        </div>
-        <div class="windspeed">
-          <p>Wind Speed: 10mph SW</p>
-        </div>
-      </div>
-    </section>
+    <section class="allcontent">
+      <section class="citypic">
+        <h2 class="mainheader1">The City of Franklin</h2>
+        <picture class="pic1">
+          <source media="(max-width: 37.5em)" srcset="images/franklinweather-640x426.jpg">
 
+          <source media="(max-width: 64em)" srcset="images/franklinweather-400x266.jpg">
+
+          <source media="(min-width: 64em)" srcset="images/franklinweather-400x266.jpg">
+
+          <img src="images/franklinweather-640x426.jpg" alt="frozen shattering heart">
+        </picture>
+      </section>
+      <section class="weathersum">
+        <h3 class="mainheader2">Weather Summary</h3>
+        <picture class="pic2">
+          <img src="images/cold-figure-thermometer-134x200.jpg" alt="cold figure holding thermometer">
+        </picture>
+        <div class="summary">
+          <!--<br>High: 30&deg;F<br><br> Low: 18&deg;F<br><br> Sunny and cold<br><br> Precipitation: 0%<br><br> Wind Speed: 10mph SW<br><br> -->
+          <p>High: <span id="hightemp">30</span>&deg;F</p>
+          <p>Low: <span id="lowtemp">18</span>&deg;F</p>
+          <p>Sunny and cold</p>
+          <p>Precipitation: <span id="precip">0</span>%</p>
+          <p>Wind Speed: <span id="windspeed">10</span>mph SW</p>
+          <p>Windchill: <span id="windChillTempValue"></span>&deg;F</p>
+        </div>
+      </section>
+    </section>
     <section class="forecast">
       <table>
         <thead>
