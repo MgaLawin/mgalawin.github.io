@@ -27,23 +27,8 @@
     flex-flow: row wrap;
   }
 
-  .citypic {
-    order: 1;
-  }
-
   .weathersum {
-    order: 2;
-    align-self: center;
     margin-left: 10%;
-  }
-
-  .forecast {
-    order: 3;
-    align-self: center;
-  }
-
-  .article1 {
-    order: 4;
   }
 
   .summary {
