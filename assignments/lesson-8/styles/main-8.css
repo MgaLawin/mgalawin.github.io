@@ -7,169 +7,65 @@
 /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
+  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
+
   /* Declare the base font-family - from google font api or other */
 }
 
-header,
-nav,
-main,
-footer {
-  /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-}
-
-header img {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%;
-}
-
 header h1 {
-  font-family: 'Archivo Black';
   font-size: 26px;
   text-align: center;
 }
 
-header .subheading {
-  font-family: 'Arima Madurai';
-  font-size: 20px;
+table,
+th,
+td {
+  border: 1px solid #bababa;
+  border-collapse: collapse;
   text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #55aa55;
-}
-
-nav ul li a {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  border-bottom: 2px solid #004400;
-  font-family: 'Arsenal';
-  font-style: oblique;
-  font-size: 16px;
-  padding: 8px 16px;
-}
-
-nav ul li.sixth a {
-  border-bottom: none;
-}
-
-nav ul li a:hover {
-  background-color: #88cc88;
-}
-
-nav ul li.active a {
-  background-color: #004400;
-}
-
-nav ul.hidden {
-  display: none;
-}
-
-main h1 {
-  font-family: 'Archivo Black';
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
-}
-
-main h2 {
-  font-family: 'Archivo Black';
-  font-size: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-main h3 {
-  font-family: 'Archivo Black';
-  font-size: 16px;
-}
-
-main figure {
-  margin: 0 2% .2rem 2%;
-  width: 100%;
-}
-
-main picture img {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
-  max-width: 85%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 7px;
 }
 
-.weathersum {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px 1px 1px 1px;
-  height: 300px;
+table {
+  box-shadow: 7px 7px 14px 0 #6D95AB;
 }
 
-main section h3 {
-  text-align: center;
-  width: 100%;
+thead tr:nth-child(1) {
+  background-color: #7fb9c2;
+  font-size: 26px;
 }
 
-.pic2 {
-  float: left;
-  margin: 1em;
+thead tr:nth-child(2) {
+  background-color: #628ca6;
+  color: #fff;
+  font-size: 18px;
 }
 
-section.forecast {
-  display: none;
+tbody tr:nth-child(even) {
+  background-color: #e7ffed;
 }
 
-article h3 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 1px 1px 1px 11px;
+tbody tr:nth-child(odd) {
+  background-color: #e7f0ed;
 }
 
-article picture {
-  display: flex;
-  margin: 0 2% .2rem 2%;
-  width: 100%;
-  justify-content: center;
+tr:nth-child(4) td:nth-child(3) {
+  background-color: #628ca6;
+  color: #fff;
 }
 
-article p {
-  padding: 1px 16px 1px 16px;
+tr:nth-child(5) td:nth-child(1) {
+  font-style: italic;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.weather {
-  display: grid;
-  height: auto;
-}
-
-.weather-pic {
-  max-width: 100%;
-}
-
-.weather-title {
-  font-size: 14px;
-}
-
-.weather-title p {
-  font-size: 1.3em;
-  text-align: justify;
-  padding: 0 10px 0 10px;
+tfoot {
+  background-color: #7fb9c2;
+  font-size: 12px;
 }
 
 footer {
@@ -178,11 +74,3 @@ footer {
   color: #fff;
   margin-top: 10px;
 }
-
-footer aside {
-  padding: 10px 0 0 0;
-}
-
-/* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */
