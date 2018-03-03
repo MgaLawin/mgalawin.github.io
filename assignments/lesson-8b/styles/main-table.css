@@ -1,0 +1,76 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+  box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+
+  /* Declare the base font-family - from google font api or other */
+}
+
+header h1 {
+  font-size: 26px;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid #bababa;
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 7px;
+}
+
+table {
+  box-shadow: 7px 7px 14px 0 #6D95AB;
+}
+
+thead tr:nth-child(1) {
+  background-color: #7fb9c2;
+  font-size: 26px;
+}
+
+thead tr:nth-child(2) {
+  background-color: #628ca6;
+  color: #fff;
+  font-size: 18px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e7ffed;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e7f0ed;
+}
+
+tr:nth-child(4) td:nth-child(3) {
+  background-color: #628ca6;
+  color: #fff;
+}
+
+tr:nth-child(5) td:nth-child(1) {
+  font-style: italic;
+}
+
+tfoot {
+  background-color: #7fb9c2;
+  font-size: 12px;
+}
+
+footer {
+  background-color: #116611;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}
