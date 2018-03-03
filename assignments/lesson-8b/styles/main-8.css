@@ -44,6 +44,7 @@ nav ul {
   padding: 0;
   width: 100%;
   background-color: #55aa55;
+  border-radius: 15px;
 }
 
 nav ul li a {
@@ -172,11 +173,87 @@ article p {
   padding: 0 10px 0 10px;
 }
 
+form#stormalert {
+  margin: 1em 3%;
+}
+
+fieldset {
+  background-color: #88cc88;
+  border-radius: 50px 15px;
+  margin: 1.5em 0;
+  border: black solid 1px;
+}
+
+legend {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 6%;
+  padding: .5em;
+  border: black solid 1px;
+  background-color: #55aa55;
+  border-radius: 15px 50px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: .5em;
+}
+
+label span {
+  display: block;
+  font-size: 1em;
+  color: black;
+  padding-top: .9em;
+  padding-bottom: .2em;
+}
+
+#ratingvalue {
+  font-weight: bold;
+}
+
+#stypearea {
+  width: 200px;
+  height: 200;
+}
+
+input.submitBtn {
+  color: #fff;
+  border: solid 1px #111;
+  border-radius: 15px;
+  width: 40%;
+  margin: .5em 0;
+  font-size: 1em;
+  padding: .6em;
+  background: #7d2a35;
+  box-shadow: 4px 4px 10px #666;
+}
+
+input.resetBtn {
+  color: #000;
+  font-weight: bold;
+  border: solid 1px #111;
+  border-radius: 15px;
+  width: 40%;
+  max-width: 200px;
+  margin: .5em 1em;
+  font-size: 1em;
+  padding: .3em;
+  background: #d46a6a;
+  box-shadow: 4px 4px 10px #666;
+}
+
+#addInfoField {
+  width: 95%;
+}
+
 footer {
   background-color: #116611;
   text-align: center;
   color: #fff;
   margin-top: 10px;
+  border-radius: 15px 15px;
 }
 
 footer aside {
