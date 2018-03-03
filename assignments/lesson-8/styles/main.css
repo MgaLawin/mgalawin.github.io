@@ -76,6 +76,12 @@ nav ul.hidden {
   display: none;
 }
 
+.formPage {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 main h1 {
   font-family: 'Archivo Black';
   font-size: 22px;
