@@ -56,7 +56,7 @@
   <!-- CONTENT -->
   <main>
     <h2>Please fill out the following information to report a storm.</h2>
-    <form action="" method="post" enctype="multipart/form-data" name="attend" id="stormalert">
+    <form action="thanks.html" method="get" enctype="multipart/form-data" name="attend" id="stormalert">
 
       <fieldset>
 
@@ -74,17 +74,17 @@
 
       <fieldset>
         <legend><span>Storm Information</span></legend>
-        <label><span>Storm Date: </span><input name="sdate" type="date" value="" required></label>
+        <label><span>Storm Date: </span><input name="sdate" type="date" value=""></label>
 
-        <label><span>Storm Type:</span>
-              <select names="types" size="5">
-                <option value="Flash Flood">Flash Flood</option>
-                <option value="Hail">Hail</option>
-                <option value="Hurricane">Hurricane</option>
-                <option value="Thunderstorm">Thunderstorm</option>
-                <option value="Tornado">Tornado</option>
-              </select>
-            </label>
+        <label><span>Storm Type:</span><input type="text" name="stype" list="stormtypes">
+            <datalist id="stormtypes">
+              <option value="Flash Flood">Flash Flood</option>
+              <option value="Hail">Hail</option>
+              <option value="Hurricane">Hurricane</option>
+              <option value="Thunderstorm">Thunderstorm</option>
+              <option value="Tornado">Tornado</option>
+            </datalist>
+        </label>
 
         <label><span>Storm Severity (1 to 10):</span></label>
         <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> <span id="ratingvalue">5</span>
@@ -106,20 +106,21 @@
 
       </fieldset>
 
-      <input type="submit" value="Submit" class="submitBtn">
-      <input type="reset" value="Reset" class="resetBtn">
+      <fieldset>
 
+        <legend><span>Additional Information or Comments</span></legend>
+        <label><span>Comments:</span></label>
+        <textarea rows="4" name="addInfo" id="addInfoField" form="stormalert"></textarea>
+
+      </fieldset>
+
+      <input type="submit" value="Submit" class="submitBtn">
       <input type="hidden" value="Storm Alert Submission" name="subject">
       <input name="redirect" type="hidden" value="thanks.html">
+
+      <input type="reset" value="Reset" class="resetBtn">
+
     </form>
-
-    <fieldset>
-
-      <legend><span>Additional Information or Comments</span></legend>
-      <label><span>Comments:</span></label>
-      <textarea rows="4" cols="50" name="addInfo" id="addInfoField" form="stormalert"></textarea>
-
-    </fieldset>
 
   </main>
 
@@ -136,8 +137,6 @@
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/adjustRating.js"></script>
-  <script src="scripts/disableItem.js"></script>
-
 
 </body>
 
