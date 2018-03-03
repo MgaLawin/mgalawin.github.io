@@ -7,65 +7,245 @@
 /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
-
   /* Declare the base font-family - from google font api or other */
 }
 
-header h1 {
-  font-size: 26px;
-  text-align: center;
+header,
+nav,
+main,
+footer {
+  /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-table,
-th,
-td {
-  border: 1px solid #bababa;
-  border-collapse: collapse;
-  text-align: center;
+header img {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 7px;
+  max-width: 90%;
 }
 
-table {
-  box-shadow: 7px 7px 14px 0 #6D95AB;
-}
-
-thead tr:nth-child(1) {
-  background-color: #7fb9c2;
+header h1 {
+  font-family: 'Archivo Black';
   font-size: 26px;
+  text-align: center;
 }
 
-thead tr:nth-child(2) {
-  background-color: #628ca6;
+header .subheading {
+  font-family: 'Arima Madurai';
+  font-size: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #55aa55;
+  border-radius: 15px;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
   color: #fff;
+  border-bottom: 2px solid #004400;
+  font-family: 'Arsenal';
+  font-style: oblique;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+nav ul li.sixth a {
+  border-bottom: none;
+}
+
+nav ul li a:hover {
+  background-color: #88cc88;
+}
+
+nav ul li.active a {
+  background-color: #004400;
+}
+
+nav ul.hidden {
+  display: none;
+}
+
+main h1 {
+  font-family: 'Archivo Black';
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+}
+
+main h2 {
+  font-family: 'Archivo Black';
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+main h3 {
+  font-family: 'Archivo Black';
+  font-size: 16px;
+}
+
+main figure {
+  margin: 0 2% .2rem 2%;
+  width: 100%;
+}
+
+main picture img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+}
+
+.weathersum {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 1px 1px 1px;
+  height: 300px;
+}
+
+main section h3 {
+  text-align: center;
+  width: 100%;
+}
+
+.pic2 {
+  float: left;
+  margin: 1em;
+}
+
+section.forecast {
+  display: none;
+}
+
+article h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1px 1px 1px 11px;
+}
+
+article picture {
+  display: flex;
+  margin: 0 2% .2rem 2%;
+  width: 100%;
+  justify-content: center;
+}
+
+article p {
+  padding: 1px 16px 1px 16px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.weather {
+  display: grid;
+  height: auto;
+}
+
+.weather-pic {
+  max-width: 100%;
+}
+
+.weather-title {
+  font-size: 14px;
+}
+
+.weather-title p {
+  font-size: 1.3em;
+  text-align: justify;
+  padding: 0 10px 0 10px;
+}
+
+form#stormalert {
+  margin: 1em 3%;
+}
+
+fieldset {
+  background-color: #88cc88;
+  border-radius: 50px 15px;
+  margin: 1.5em 0;
+  border: black solid 1px;
+}
+
+legend {
+  color: black;
+  font-weight: bold;
   font-size: 18px;
+  margin-left: 6%;
+  padding: .5em;
+  border: black solid 1px;
+  background-color: #55aa55;
+  border-radius: 15px 50px;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #e7ffed;
+label {
+  display: block;
+  font-weight: bold;
+  margin: .5em;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #e7f0ed;
+label span {
+  display: block;
+  font-size: 1em;
+  color: black;
+  padding-top: .9em;
+  padding-bottom: .2em;
 }
 
-tr:nth-child(4) td:nth-child(3) {
-  background-color: #628ca6;
+#ratingvalue {
+  font-weight: bold;
+}
+
+#stypearea {
+  width: 200px;
+  height: 200;
+}
+
+input.submitBtn {
   color: #fff;
+  border: solid 1px #111;
+  border-radius: 15px;
+  width: 40%;
+  margin: .5em 0;
+  font-size: 1em;
+  padding: .6em;
+  background: #7d2a35;
+  box-shadow: 4px 4px 10px #666;
 }
 
-tr:nth-child(5) td:nth-child(1) {
-  font-style: italic;
+input.resetBtn {
+  color: #000;
+  font-weight: bold;
+  border: solid 1px #111;
+  border-radius: 15px;
+  width: 40%;
+  max-width: 200px;
+  margin: .5em 1em;
+  font-size: 1em;
+  padding: .3em;
+  background: #d46a6a;
+  box-shadow: 4px 4px 10px #666;
 }
 
-tfoot {
-  background-color: #7fb9c2;
-  font-size: 12px;
+#addInfoField {
+  width: 95%;
 }
 
 footer {
@@ -73,4 +253,13 @@ footer {
   text-align: center;
   color: #fff;
   margin-top: 10px;
+  border-radius: 15px 15px;
 }
+
+footer aside {
+  padding: 10px 0 0 0;
+}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
