@@ -213,11 +213,6 @@ label span {
   font-weight: bold;
 }
 
-#stypearea {
-  width: 200px;
-  height: 200;
-}
-
 input.submitBtn {
   color: #fff;
   border: solid 1px #111;
