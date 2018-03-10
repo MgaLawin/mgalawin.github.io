@@ -16,20 +16,20 @@ function showTowns(jsonObj) {
 
   for (var i = 0; i < town.length; i++) {
     if (town[i].name == "Franklin" || town[i].name == "Springfield" || town[i].name == "Greenville") {
-      var myArticle = document.createElement('article');
-      var myH3 = document.createElement('h3');
-      var myH4 = document.createElement('h4');
-      var myPara2 = document.createElement('p');
-      var myPara3 = document.createElement('p');
-      var myPara4 = document.createElement('p');
-      var myList = document.createElement('ul');
+      var wArt = document.createElement('article');
+      var wH3 = document.createElement('h3');
+      var wH4 = document.createElement('h4');
+      var wP2 = document.createElement('p');
+      var wP3 = document.createElement('p');
+      var wP4 = document.createElement('p');
+      var wUL = document.createElement('ul');
 
-      myH3.textContent = town[i].name;
-      myH4.textContent = town[i].motto;
-      myPara2.textContent = 'Year Founded: ' + town[i].yearFounded;
-      myPara3.textContent = 'Current Population: ' + town[i].currentPopulation;
-      myPara4.textContent = 'Average Rainfall: ' + town[i].averageRainfall;
-      myList.textContent = 'Events: ';
+      wH3.textContent = town[i].name;
+      wH4.textContent = town[i].motto;
+      wP2.textContent = 'Year Founded: ' + town[i].yearFounded;
+      wP3.textContent = 'Current Population: ' + town[i].currentPopulation;
+      wP4.textContent = 'Average Rainfall: ' + town[i].averageRainfall;
+      wUL.textContent = 'Events: ';
 
       var eventList = town[i].events;
 
@@ -39,14 +39,14 @@ function showTowns(jsonObj) {
         myList.appendChild(listItem);
       }
 
-      myArticle.appendChild(myH3);
-      myArticle.appendChild(myH4);
-      myArticle.appendChild(myPara2);
-      myArticle.appendChild(myPara3);
-      myArticle.appendChild(myPara4);
-      myArticle.appendChild(myList);
+      wArt.appendChild(wH3);
+      wArt.appendChild(wH4);
+      wArt.appendChild(wP2);
+      wArt.appendChild(wP3);
+      wArt.appendChild(wP4);
+      wArt.appendChild(wUL);
 
-      section.appendChild(myArticle);
+      section.appendChild(wArt);
     }
   }
 }
