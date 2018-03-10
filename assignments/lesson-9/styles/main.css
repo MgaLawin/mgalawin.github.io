@@ -279,24 +279,24 @@ input.resetBtn {
 }
 
 .fDataInfo {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
   border-style: solid;
-  padding: 0 20px 0 20px;
+  padding: 0 5px 0 5px;
 }
 
 .gDataInfo {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
   border-style: solid;
-  padding: 0 20px 0 20px;
+  padding: 0 5px 0 5px;
 }
 
 .sDataInfo {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
   border-style: solid;
-  padding: 0 20px 0 20px;
+  padding: 0 5px 0 5px;
 }
 
 #appendChild {
