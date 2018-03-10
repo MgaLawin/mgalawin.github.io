@@ -1,4 +1,4 @@
-var section = document.querySelector('.tDataInfo');
+var section3 = document.querySelector('.sDataInfo');
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
@@ -15,7 +15,7 @@ function showTowns(jsonObj) {
   var town = jsonObj['towns'];
 
   for (var i = 0; i < town.length; i++) {
-    if (town[i].name == "Franklin" || town[i].name == "Springfield" || town[i].name == "Greenville") {
+    if (town[i].name == "Springfield") {
       var wArt = document.createElement('article');
       var wH3 = document.createElement('h3');
       var wH4 = document.createElement('h4');
@@ -46,7 +46,7 @@ function showTowns(jsonObj) {
       wArt.appendChild(wP4);
       wArt.appendChild(wUL);
 
-      section.appendChild(wArt);
+      section3.appendChild(wArt);
     }
   }
 }

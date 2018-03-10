@@ -86,7 +86,13 @@
     flex: 0 0 160px;
   }
 
-  section#towndatainfo {
+  section#townDataInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .tDataInformation {
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -271,7 +271,28 @@ input.resetBtn {
   margin-bottom: 90px;
 }
 
-#towndatainfo {
+#townDataInfo {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-style: solid;
+  padding: 0 20px 0 20px;
+}
+
+.fDataInfo {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-style: solid;
+  padding: 0 20px 0 20px;
+}
+
+.gDataInfo {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-style: solid;
+  padding: 0 20px 0 20px;
+}
+
+.sDataInfo {
   margin-left: 5%;
   margin-right: 5%;
   border-style: solid;
