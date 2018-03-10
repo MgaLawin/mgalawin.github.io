@@ -1,17 +1,37 @@
-var wFranklin = new XMLHttpRequest();
+var cityloc = 'MN/Franklin.json';
 
-weatherFranklin.open('GET', 'https://api.wunderground.com/api/1ee6a7c406f598ba/conditions/q/MN/Franklin.json', true);
-wFranklin.send();
+var cityConditions = 'https://api.wunderground.com/api/1ee6a7c406f598ba/conditions/q/' + cityloc;
+var cityForecast = 'https://api.wunderground.com/api/1ee6a7c406f598ba/forecast/q/' + cityloc;
 
-wFranklin.onload = function () {
-  var wInfo = JSON.parse(wFranklin.responseText);
+var wCity = new XMLHttpRequest();
+
+wCity.open('GET', cityConditions, true);
+wCity.send();
+
+wCity.onload = function () {
+  var wInfo = JSON.parse(wCity.responseText);
   console.log(wInfo);
 
-  document.getElementById('place-f').innerHTML = wInfo.current_observation.display_location.city;
-  document.getElementById('w-icon-f').src = wInfo.current_observation.icon_url;
-  document.getElementById('weatherString-f').innerHTML = wInfo.current_observation.weather;
-  document.getElementById('highT-f').innerHTML = wInfo.current_observation.temp_f;
-  document.getElementById('windSpeed-f').innerHTML = wInfo.current_observation.wind_mph;
-  document.getElementById('precip-f').innerHTML = wInfo.current_observation.precip_1hr_in;
-  document.getElementById('windChill-f').innerHTML = wInfo.current_observation.windchill_f;
+  document.getElementById('weatherString').innerHTML = wInfo.current_observation.weather;
+  document.getElementById('currentTemp').innerHTML = wInfo.current_observation.temp_f;
+  document.getElementById('windSpeed').innerHTML = wInfo.current_observation.wind_mph;
+  document.getElementById('windDir').innerHTML = wInfo.current_observation.wind_dir;
+  document.getElementById('w-icon').src = wInfo.current_observation.icon_url;
 }
+
+var wCity2 = new XMLHttpRequest();
+
+wCity2.open('GET', cityForecast, true);
+wCity2.send();
+
+wCity2.onload = function () {
+  var wInfo2 = JSON.parse(wCity2.responseText);
+  console.log(wInfo2);
+
+  document.getElementById('forecastText').innerHTML = wInfo2.forecast.fcttext;
+}
+
+
+
+// <script src="scripts/forecast.js"></script>
+// <script src="scripts/windchill.js"></script>

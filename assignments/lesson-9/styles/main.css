@@ -118,6 +118,15 @@ main picture img {
   flex-wrap: wrap;
   padding: 20px 1px 1px 1px;
   height: 300px;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.weatherForecast {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 main section h3 {
@@ -262,12 +271,15 @@ input.resetBtn {
   margin-bottom: 90px;
 }
 
-article.newsarticle {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
+#towndatainfo {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-style: solid;
+  padding: 0 20px 0 20px;
+}
+
+#appendChild {
+  border-style: solid;
 }
 
 footer {

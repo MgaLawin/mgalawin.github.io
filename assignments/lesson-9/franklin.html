@@ -73,13 +73,17 @@
           <img src="images/cold-figure-thermometer-134x200.jpg" alt="cold figure holding thermometer">
         </picture>
         <div class="summary">
-          <!--<br>High: 30&deg;F<br><br> Low: 18&deg;F<br><br> Sunny and cold<br><br> Precipitation: 0%<br><br> Wind Speed: 10mph SW<br><br> -->
-          <p>High: <span id="hightemp">30</span>&deg;F</p>
-          <p>Low: <span id="lowtemp">18</span>&deg;F</p>
-          <p>Sunny, windy, and cold.</p>
-          <p>Precipitation: <span id="precip">0</span>%</p>
-          <p>Wind Speed: <span id="windspeed">30</span>mph SW</p>
+          <p>Current Weather: <span id="weatherString"></span></p>
+          <p>Current Temp: <span id="currentTemp"></span>&deg;F</p>
+          <p>Wind Speed: <span id="windSpeed"></span>mph <span id="windDir"></span></p>
+          <img id="w-icon" src="" alt="Current Weather">
           <p>Windchill: <span id="windChillTempValue"></span>&deg;F</p>
+        </div>
+      </section>
+      <section class="weatherForecast">
+        <h3 class="mainheader3">Forecast</h3>
+        <div class="liveForecast">
+          <p><span id="forecastText"></span></p>
         </div>
       </section>
     </section>
@@ -151,7 +155,8 @@
 
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
-  <script src="scripts/windchill.js"></script>
+  <script src="scripts/wu-weather.js"></script>
+
 
 </body>
 

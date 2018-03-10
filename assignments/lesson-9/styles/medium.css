@@ -27,8 +27,12 @@
     flex-flow: row wrap;
   }
 
+  .citypic {
+    max-width: 300px;
+  }
+
   .weathersum {
-    margin-left: 10%;
+    margin-left: 5%;
   }
 
   .summary {
