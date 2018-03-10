@@ -1,9 +1,9 @@
 var weatherGreenville = new XMLHttpRequest();
 
-weatherGreenville.open('GET', 'https://api.wunderground.com/api/15342b83d4c08511/conditions/q/NC/Greenville.json', true);
+weatherGreenville.open('GET', 'https://api.wunderground.com/api/1ee6a7c406f598ba/conditions/q/NC/Greenville.json', true);
 weatherGreenville.send();
 
-weatherGreenville.onload = function() {
+weatherGreenville.onload = function () {
   var weatherInfo = JSON.parse(weatherGreenville.responseText);
   console.log(weatherInfo);
 

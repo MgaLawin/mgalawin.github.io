@@ -1,6 +1,6 @@
 var weatherSpringfield = new XMLHttpRequest();
 
-weatherSpringfield.open('GET', 'https://api.wunderground.com/api/15342b83d4c08511/conditions/q/MO/Springfield.json', true);
+weatherSpringfield.open('GET', 'https://api.wunderground.com/api/1ee6a7c406f598ba/conditions/q/MO/Springfield.json', true);
 weatherSpringfield.send();
 
 weatherSpringfield.onload = function() {
