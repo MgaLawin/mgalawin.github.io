@@ -44,7 +44,6 @@ nav ul {
   width: 100%;
   background-color: #55aa55;
   border-radius: 15px;
-
 }
 
 nav ul li a {
@@ -99,6 +98,7 @@ main h2 {
 main h3 {
   font-family: 'Archivo Black';
   font-size: 16px;
+  text-align: center;
 }
 
 main figure {
@@ -215,6 +215,14 @@ label span {
   padding-bottom: .2em;
 }
 
+input {
+  padding: 2px 2px 2px 10px;
+}
+
+#sregions {
+  padding: 2px 2px 2px 10px;
+}
+
 #ratingvalue {
   font-weight: bold;
 }
@@ -252,6 +260,14 @@ input.resetBtn {
 #thanksHead {
   margin-top: 90px;
   margin-bottom: 90px;
+}
+
+article.newsarticle {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 footer {
