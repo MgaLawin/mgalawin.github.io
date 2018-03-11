@@ -37,6 +37,7 @@ header .subheading {
   font-family: 'Arima Madurai';
   font-size: 20px;
   text-align: center;
+  padding-top: 10px;
 }
 
 nav ul {
