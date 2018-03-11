@@ -15,8 +15,9 @@ header,
 nav,
 main,
 footer {
-  /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header img {
@@ -271,36 +272,16 @@ input.resetBtn {
   margin-bottom: 90px;
 }
 
-#townDataInfo {
-  margin-left: 5%;
-  margin-right: 5%;
-  border-style: solid;
-  padding: 0 20px 0 20px;
+.cityContent {
+  border: solid 1px #000;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px 10px 20px;
 }
 
-.fDataInfo {
-  margin-left: 2%;
-  margin-right: 2%;
-  border-style: solid;
-  padding: 0 5px 0 5px;
-}
-
-.gDataInfo {
-  margin-left: 2%;
-  margin-right: 2%;
-  border-style: solid;
-  padding: 0 5px 0 5px;
-}
-
-.sDataInfo {
-  margin-left: 2%;
-  margin-right: 2%;
-  border-style: solid;
-  padding: 0 5px 0 5px;
-}
-
-#appendChild {
-  border-style: solid;
+.cityPics {
+  max-width: 100%;
 }
 
 footer {
@@ -314,7 +295,3 @@ footer {
 footer aside {
   padding: 10px 0 0 0;
 }
-
-/* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */

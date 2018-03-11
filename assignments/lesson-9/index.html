@@ -7,7 +7,7 @@
   <title>Outside Expectations in the Tri-Cities Area</title>
   <meta name="author" content="Jeremy Hawks">
   <meta name="description" content="current weather, ten (10) day forecast, news, Franklin, Greenville, Springfield, storm center">
-  <!-- external style references in the proper cascading order -->
+
   <link href='https://fonts.googleapis.com/css?family=Archivo+Black|Arima+Madurai|Arsenal' rel='stylesheet'>
   <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet">
@@ -26,11 +26,11 @@
   <header>
 
     <picture>
-      <source media="(max-width: 37.5em)" srcset="images/L-FoggyHill-480x233.jpg">
+      <source media="(max-width: 760px)" srcset="images/L-FoggyHill-480x233.jpg">
 
-      <source media="(max-width: 64em)" srcset="images/L-FoggyHill-800x263.jpg">
+      <source media="(max-width: 1200px)" srcset="images/L-FoggyHill-800x263.jpg">
 
-      <source media="(min-width: 64em)" srcset="images/L-FoggyHill-1746x571.jpg">
+      <source media="(min-width: 1200px)" srcset="images/L-FoggyHill-1746x571.jpg">
 
       <img src="images/L-FoggyHill-480x233.jpg" alt="Foggy hill in Franklin" title="Foggy hill in Franklin">
     </picture>
@@ -45,52 +45,91 @@
     <ul id="mainNav" class="hidden flex-container">
       <li class="active"><a href="index.html">Home</a></li>
       <li><a href="franklin.html">Franklin</a></li>
-      <li><a href="# ">Greenville</a></li>
-      <li><a href="# ">Springfield</a></li>
+      <li><a href="greenville.html">Greenville</a></li>
+      <li><a href="springfield.html">Springfield</a></li>
       <li><a href="stormcenter.html">Storm Center</a></li>
       <li class="sixth"><a href="gallery.html">Gallery</a></li>
     </ul>
   </nav>
 
-  <section class="tDataInformation">
+  <section id="cities">
+    <div class="cityContent">
+      <section class="cityInfo">
+        <div class="franklin">
+        </div>
+        <picture class="cityPics">
+          <source media="(max-width: 760px)" srcset="images/franklin-320x240.jpg">
 
-    <section class="fDataInfo"></section>
-    <section class="gDataInfo"></section>
-    <section class="sDataInfo"></section>
+          <source media="(max-width: 1200px)" srcset="images/franklin-320x240.jpg">
 
-  </section>
+          <source media="(min-width: 1200px)" srcset="images/franklin-320x240.jpg">
 
-  <main class="wrapper">
-    <h3 class="article-title">Winter Storm to Freeze Hearts on Valentine's Day!</h3>
-    <article class="articlecontent">
-      <picture class="articlepic">
-        <source media="(max-width: 37.5em)" srcset="images/frozenheart-320x240.jpg">
+          <img src="images/franklin-320x240.jpg" alt="Franklin City">
+        </picture>
+      </section>
+    </div>
+    <div class="cityContent">
+      <section class="cityInfo" id="city2">
+        <div class="greenville">
+        </div>
+        <picture class="cityPics">
+          <source media="(max-width: 760px)" srcset="images/greenville-320x240.jpg">
 
-        <source media="(max-width: 64em)" srcset="images/frozenheart-160x120.jpg">
+          <source media="(max-width: 1200px)" srcset="images/greenville-320x240.jpg">
 
-        <source media="(min-width: 64em)" srcset="images/frozenheart-160x120.jpg">
+          <source media="(min-width: 1200px)" srcset="images/greenville-320x240.jpg">
 
-        <img src="images/frozenheart-320x240.jpg" alt="frozen shattering heart">
-      </picture>
-      <p class="town-article">
-        Jack Frost is out to freeze the hearts of any couples brave enough to venture out on Valentine's Day this year. The high is only expected to be 18&deg;F, and the wind will be 45mph from the East, giving us a windchill factor of <b>-4.7&deg;F</b> which is <b>-20.4&deg;C</b>. So our recommendation for couples is to cuddle up safe and sound inside instead of braving those frigid temperatures.
-      </p>
-    </article>
-  </main>
+          <img src="images/greenville-320x240.jpg" alt="Greenville City">
+        </picture>
+      </section>
+    </div>
+    <div class="cityContent">
+      <section class="cityInfo">
 
-  <footer>
-    <aside>
-      What Weather to Expect Outside<br> 123 Main St.<br> Franklin, MU 83454<br> (999) 999-9999<br> contact@outside-expectations.com
-      <br>
-    </aside>
-    <p class="footer-bar">&copy;2018 All Rights Reserved | Outside Expectations | <span id="currentdate">Current Date Placeholder</span></p>
-  </footer>
+        <div class="springfield">
+        </div>
+        <picture class="cityPics">
+          <source media="(max-width: 760px)" srcset="images/Springfield-320x240.jpg">
 
-  <script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
-  <script src="scripts/franklinData.js"></script>
-  <script src="scripts/greenvilleData.js"></script>
-  <script src="scripts/springfieldData.js"></script>
+          <source media="(max-width: 1200px)" srcset="images/Springfield-320x240.jpg">
+
+          <source media="(min-width: 1200px)" srcset="images/Springfield-320x240.jpg">
+
+          <img src="images/Springfield-320x240.jpg" alt="Springfield City">
+        </picture>
+      </section>
+    </div>
+
+
+    <main class="wrapper">
+      <h3 class="article-title">Winter Storm to Freeze Hearts on Valentine's Day!</h3>
+      <article class="articlecontent">
+        <picture class="articlepic">
+          <source media="(max-width: 760px)" srcset="images/frozenheart-320x240.jpg">
+
+          <source media="(max-width: 1200px)" srcset="images/frozenheart-160x120.jpg">
+
+          <source media="(min-width: 1200px)" srcset="images/frozenheart-160x120.jpg">
+
+          <img src="images/frozenheart-320x240.jpg" alt="frozen shattering heart">
+        </picture>
+        <p class="town-article">
+          Jack Frost is out to freeze the hearts of any couples brave enough to venture out on Valentine's Day this year. The high is only expected to be 18&deg;F, and the wind will be 45mph from the East, giving us a windchill factor of <b>-4.7&deg;F</b> which is <b>-20.4&deg;C</b>. So our recommendation for couples is to cuddle up safe and sound inside instead of braving those frigid temperatures.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <aside>
+        What Weather to Expect Outside<br> 123 Main St.<br> Franklin, MU 83454<br> (999) 999-9999<br> contact@outside-expectations.com
+        <br>
+      </aside>
+      <p class="footer-bar">&copy;2018 All Rights Reserved | Outside Expectations | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/townData.js"></script>
 
 </body>
 

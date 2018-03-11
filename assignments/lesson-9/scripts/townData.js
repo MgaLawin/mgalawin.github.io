@@ -1,52 +1,60 @@
-var section = document.querySelector('.tDataInfo');
+var franklin = document.querySelector('div.franklin');
+var greenville = document.querySelector('div.greenville');
+var springfield = document.querySelector('div.springfield');
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
+
 request.responseType = 'json';
 request.send();
 
 request.onload = function () {
-  var townInfo = request.response;
-  showTowns(townInfo);
+  var cityInfo = request.response;
+  displayCity(cityInfo);
 }
 
-function showTowns(jsonObj) {
-  var town = jsonObj['towns'];
+function displayCity(jsonObj) {
+  var city = jsonObj['towns'];
 
-  for (var i = 0; i < town.length; i++) {
-    if (town[i].name == "Franklin" || town[i].name == "Springfield" || town[i].name == "Greenville") {
-      var wArt = document.createElement('article');
-      var wH3 = document.createElement('h3');
-      var wH4 = document.createElement('h4');
-      var wP2 = document.createElement('p');
-      var wP3 = document.createElement('p');
-      var wP4 = document.createElement('p');
-      var wUL = document.createElement('ul');
+  for (var i = 0; i < city.length; i++) {
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+    var myPara5 = document.createElement('p');
+    var myList = document.createElement('ul');
 
-      wH3.textContent = town[i].name;
-      wH4.textContent = town[i].motto;
-      wP2.textContent = 'Year Founded: ' + town[i].yearFounded;
-      wP3.textContent = 'Current Population: ' + town[i].currentPopulation;
-      wP4.textContent = 'Average Rainfall: ' + town[i].averageRainfall;
-      wUL.textContent = 'Events: ';
+    myH2.textContent = city[i].name;
+    myPara1.textContent = 'Motto: ' + city[i].motto;
+    myPara2.textContent = 'Year Founded: ' + city[i].yearFounded;
+    myPara3.textContent = 'Current Population: ' + city[i].currentPopulation;
+    myPara4.textContent = 'Average Rainfall: ' + city[i].averageRainfall;
+    myPara5.textContent = 'Events:';
 
-      var eventList = town[i].events;
+    var events = city[i].events;
+    for (var j = 0; j < events.length; j++) {
+      var listItem = document.createElement('li');
+      listItem.textContent = events[j];
+      myList.appendChild(listItem);
+    }
 
-      for (var j = 0; j < eventList.length; j++) {
-        var listItem = document.createElement('li');
-        listItem.textContent = eventList[j];
-        wUL.appendChild(listItem);
-      }
-
-      wArt.appendChild(wH3);
-      wArt.appendChild(wH4);
-      wArt.appendChild(wP2);
-      wArt.appendChild(wP3);
-      wArt.appendChild(wP4);
-      wArt.appendChild(wUL);
-
-      section.appendChild(wArt);
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+    myArticle.appendChild(myPara5);
+    myArticle.appendChild(myList);
+    if (city[i].name == "Franklin") {
+      franklin.appendChild(myArticle);
+    } else if (city[i].name == "Greenville") {
+      greenville.appendChild(myArticle);
+    } else if (city[i].name == "Springfield") {
+      springfield.appendChild(myArticle);
     }
   }
 }
