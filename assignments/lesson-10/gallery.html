@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tri-City Weather Gallery</title>
+  <meta name="author" content="Jeremy Hawks">
+  <meta name="description" content="images, pictures, photos, of weather in Franklin, Greenville, and Springfield">
+
+  <link href='https://fonts.googleapis.com/css?family=Archivo+Black|Arima+Madurai|Arsenal' rel='stylesheet'>
+  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet">
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">
+  <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">
+  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">
+  <!-- large/wide/desktop views -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+</head>
+
+<body>
+
+  <header>
+
+    <picture>
+      <source media="(max-width: 760px)" srcset="images/L-FoggyHill-480x233.jpg">
+
+      <source media="(max-width: 1200px)" srcset="images/L-FoggyHill-800x263.jpg">
+
+      <source media="(min-width: 1200px)" srcset="images/L-FoggyHill-1746x571.jpg">
+
+      <img src="images/L-FoggyHill-480x233.jpg" alt="Foggy hill in Franklin" title="Foggy hill in Franklin">
+    </picture>
+
+    <h1>Weather Related Images From the Tri-City Area</h1>
+
+    <div class="subheading ">You won't be disappointed with the views here!</div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="mainNav" class="hidden flex-container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="franklin.html">Franklin</a></li>
+      <li><a href="greenville.html">Greenville</a></li>
+      <li><a href="springfield.html">Springfield</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li class="active sixth"><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT -->
+  <main>
+    <h1>Gallery of Weather Photos</h1>
+    <section class="gallery-grid">
+      <div class="weather">
+        <img class="weather-pic" src="images/L-Lightning-600x400.jpg" alt="Lightning strikes" title="Lightning strikes">
+        <div class="weather-title">
+          <h3>Lightning</h3>
+          <p>Lightning strikes over the forest in Franklin. Fortunately no one was in the area at the time, but three trees were killed during the storm.<br>Image courtesy of Bing.</p>
+        </div>
+      </div>
+      <div class="weather">
+        <img class="weather-pic" src="images/L-MountainSunset-600x400.jpg" alt="Sunset behind a mountain" title="Sunset behind a mountain">
+        <div class="weather-title">
+          <h3>Sunset</h3>
+          <p>Beautiful sunsets behind the Greenville mountains can provide glorious opportunities for photographers of all levels.<br>Photo courtesy of Jeremy Hawks.</p>
+        </div>
+      </div>
+      <div class="weather">
+        <img class="weather-pic" src="images/L-RainDrop-600x400.jpg" alt="Raindrop from roof gutter" title="Raindrop from a gutter">
+        <div class="weather-title">
+          <h3>Raindrop</h3>
+          <p>It is hard to catch drips with a still camera, but you will have many chances during the frequent rainstorms in Springfield.<br>Photo courtesy of Jeremy Hawks.</p>
+        </div>
+      </div>
+      <div class="weather">
+        <img class="weather-pic" src="images/L-ReadingInAField-600x400.jpg" alt="Girl laying in the grass and flowers reading on a summer day" title="Summer day reading">
+        <div class="weather-title">
+          <h3>Summer Day</h3>
+          <p>Take time to enjoy nature and a good book on a summer day in the fields of Franklin.<br>Photo courtesy of Bing.</p>
+        </div>
+      </div>
+      <div class="weather">
+        <img class="weather-pic" src="images/L-Waterfalls_Frozen_blue_lagoon-600x400.jpg" alt="Sunny Weather" title="Frozen waterfall and pond">
+        <div class="weather-title">
+          <h3>Frozen Waterfall and Pond</h3>
+          <p>Be sure to dress warm if you visit the frozen waterfalls during winter in Greenville.<br>Photo courtesy of Bing.</p>
+        </div>
+      </div>
+      <div class="weather">
+        <img class="weather-pic" src="images/L-Tornado-Lightning-600x400.jpg" alt="Tornado and lightning" title="Tornado and Lightning">
+        <div class="weather-title">
+          <h3>Tornado</h3>
+          <p>Be wary of the occassional tornados and accompanying lightning in Springfield.<br>Photo courtesy of Bing.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <aside>
+      What Weather to Expect Outside<br> 123 Main St.<br> Franklin, MU 83454<br> (999) 999-9999<br> contact@outside-expectations.com
+      <br>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | What Weather to Expect in Franklin | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>

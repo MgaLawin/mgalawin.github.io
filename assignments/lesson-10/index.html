@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Outside Expectations in the Tri-Cities Area</title>
+  <meta name="author" content="Jeremy Hawks">
+  <meta name="description" content="current weather, ten (10) day forecast, news, Franklin, Greenville, Springfield, storm center">
+
+  <link href='https://fonts.googleapis.com/css?family=Archivo+Black|Arima+Madurai|Arsenal' rel='stylesheet'>
+  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet">
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">
+  <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">
+  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">
+  <!-- large/wide/desktop views -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+</head>
+
+<body>
+
+  <header>
+
+    <picture>
+      <source media="(max-width: 760px)" srcset="images/L-FoggyHill-480x233.jpg">
+
+      <source media="(max-width: 1200px)" srcset="images/L-FoggyHill-800x263.jpg">
+
+      <source media="(min-width: 1200px)" srcset="images/L-FoggyHill-1746x571.jpg">
+
+      <img src="images/L-FoggyHill-480x233.jpg" alt="Foggy hill in Franklin" title="Foggy hill in Franklin">
+    </picture>
+
+    <h1>Outside Expectations in the Tri-Cities Area</h1>
+
+    <div class="subheading ">You won't be disappointed with the weather here!</div>
+  </header>
+
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="mainNav" class="hidden flex-container">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="franklin.html">Franklin</a></li>
+      <li><a href="greenville.html">Greenville</a></li>
+      <li><a href="springfield.html">Springfield</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li class="sixth"><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <section id="cities">
+    <div class="cityContent">
+      <section class="cityInfo">
+        <div class="franklin">
+        </div>
+        <picture class="cityPics">
+          <source media="(max-width: 760px)" srcset="images/Franklin-320x240.jpg">
+
+          <source media="(max-width: 1200px)" srcset="images/Franklin-320x240.jpg">
+
+          <source media="(min-width: 1200px)" srcset="images/Franklin-320x240.jpg">
+
+          <img src="images/Franklin-320x240.jpg" alt="Franklin City">
+        </picture>
+      </section>
+    </div>
+    <div class="cityContent">
+      <section class="cityInfo" id="city2">
+        <div class="greenville">
+        </div>
+        <picture class="cityPics">
+          <source media="(max-width: 760px)" srcset="images/Greenville-320x240.jpg">
+
+          <source media="(max-width: 1200px)" srcset="images/Greenville-320x240.jpg">
+
+          <source media="(min-width: 1200px)" srcset="images/Greenville-320x240.jpg">
+
+          <img src="images/Greenville-320x240.jpg" alt="Greenville City">
+        </picture>
+      </section>
+    </div>
+    <div class="cityContent">
+      <section class="cityInfo">
+
+        <div class="springfield">
+        </div>
+        <picture class="cityPics">
+          <source media="(max-width: 760px)" srcset="images/Springfield-320x240.jpg">
+
+          <source media="(max-width: 1200px)" srcset="images/Springfield-320x240.jpg">
+
+          <source media="(min-width: 1200px)" srcset="images/Springfield-320x240.jpg">
+
+          <img src="images/Springfield-320x240.jpg" alt="Springfield City">
+        </picture>
+      </section>
+    </div>
+  </section>
+
+  <main class="wrapper">
+    <h3 class="article-title">Winter Storm to Freeze Hearts on Valentine's Day!</h3>
+    <article class="articlecontent">
+      <picture class="articlepic">
+        <source media="(max-width: 760px)" srcset="images/frozenheart-320x240.jpg">
+
+        <source media="(max-width: 1200px)" srcset="images/frozenheart-160x120.jpg">
+
+        <source media="(min-width: 1200px)" srcset="images/frozenheart-160x120.jpg">
+
+        <img src="images/frozenheart-320x240.jpg" alt="frozen shattering heart">
+      </picture>
+      <p class="town-article">
+        Jack Frost is out to freeze the hearts of any couples brave enough to venture out on Valentine's Day this year. The high is only expected to be 18&deg;F, and the wind will be 45mph from the East, giving us a windchill factor of <b>-4.7&deg;F</b> which is <b>-20.4&deg;C</b>. So our recommendation for couples is to cuddle up safe and sound inside instead of braving those frigid temperatures.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <aside>
+      What Weather to Expect Outside<br> 123 Main St.<br> Franklin, MU 83454<br> (999) 999-9999<br> contact@outside-expectations.com
+      <br>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Outside Expectations | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/townData.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thanks</title>
+  <meta name="author" content="Jeremy Hawks">
+  <meta name="description" content="thank you for submitting a storm alert">
+  <!-- external style references in the proper cascading order -->
+  <link href='https://fonts.googleapis.com/css?family=Archivo+Black|Arima+Madurai|Arsenal' rel='stylesheet'>
+  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet">
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">
+  <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">
+  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">
+  <!-- large/wide/desktop views -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+</head>
+
+<body>
+
+  <header>
+
+    <picture>
+      <source media="(max-width: 760px)" srcset="images/L-FoggyHill-480x233.jpg">
+
+      <source media="(max-width: 1200px)" srcset="images/L-FoggyHill-800x263.jpg">
+
+      <source media="(min-width: 1200px)" srcset="images/L-FoggyHill-1746x571.jpg">
+
+      <img src="images/L-FoggyHill-480x233.jpg" alt="Foggy hill in Franklin" title="Foggy hill in Franklin">
+    </picture>
+
+    <h1>Report a storm in the Tri-City Area</h1>
+
+    <div class="subheading ">You won't be disappointed with the weather here!</div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="mainNav" class="hidden flex-container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="franklin.html">Franklin</a></li>
+      <li><a href="greenville.html">Greenville</a></li>
+      <li><a href="springfield.html">Springfield</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li class="sixth"><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT -->
+  <main>
+    <h1 id="thanksHead">Thanks for your storm alert submission!</h1>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <aside>
+      What Weather to Expect Outside<br> 123 Main St.<br> Franklin, MU 83454<br> (999) 999-9999<br> contact@outside-expectations.com
+      <br>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | What Weather to Expect in Franklin | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>

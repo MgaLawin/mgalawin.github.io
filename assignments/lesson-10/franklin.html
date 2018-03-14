@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Weather to Expect in Franklin</title>
+  <meta name="author" content="Jeremy Hawks">
+  <meta name="description" content="current weather, ten (10) day forecast, news, Franklin">
+
+  <link href='https://fonts.googleapis.com/css?family=Archivo+Black|Arima+Madurai|Arsenal' rel='stylesheet'>
+  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet">
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">
+  <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">
+  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">
+  <!-- large/wide/desktop views -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+</head>
+
+<body>
+
+  <header>
+
+    <picture>
+      <source media="(max-width: 760px)" srcset="images/L-FoggyHill-480x233.jpg">
+
+      <source media="(max-width: 1200px)" srcset="images/L-FoggyHill-800x263.jpg">
+
+      <source media="(min-width: 1200px)" srcset="images/L-FoggyHill-1746x571.jpg">
+
+      <img src="images/L-FoggyHill-480x233.jpg" alt="Foggy hill in Franklin" title="Foggy hill in Franklin">
+    </picture>
+
+    <h1>What Weather to Expect in Franklin</h1>
+
+    <div class="subheading ">Where You Will Grow!</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="mainNav" class="hidden flex-container">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="franklin.html">Franklin</a></li>
+      <li><a href="greenville.html">Greenville</a></li>
+      <li><a href="springfield.html">Springfield</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li class="sixth"><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrapper">
+    <section class="allcontent">
+      <section class="citypic">
+        <h2 class="mainheader1">The City of Franklin</h2>
+        <picture class="pic1">
+          <source media="(max-width: 760px)" srcset="images/franklinweather-640x426.jpg">
+
+          <source media="(max-width: 1200px)" srcset="images/franklinweather-400x266.jpg">
+
+          <source media="(min-width: 1200px)" srcset="images/franklinweather-400x266.jpg">
+
+          <img src="images/franklinweather-640x426.jpg" alt="snow covered city and statue">
+        </picture>
+      </section>
+      <section class="weathersum">
+        <h3 class="mainheader2">Weather Summary</h3>
+        <picture class="pic2">
+          <img src="images/cold-figure-thermometer-134x200.jpg" alt="cold figure holding thermometer">
+        </picture>
+        <div class="summary">
+          <p>Current Weather: <span id="weatherString"></span></p>
+          <p>Current Temp: <span id="currentTemp"></span>&deg;F</p>
+          <p>Wind Speed: <span id="windSpeed"></span>mph <span id="windDir"></span></p>
+          <img id="w-icon" src="" alt="Current Weather">
+          <p>Windchill: <span id="windChillTempValue"></span>&deg;F</p>
+        </div>
+      </section>
+      <section class="weatherForecast">
+        <h3 class="mainheader3">Forecast</h3>
+        <div class="liveForecast">
+          <p><span id="forecastText"></span></p>
+        </div>
+      </section>
+    </section>
+    <section class="forecast">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="10" id="tendayforecast"> 10 Day Forecast</th>
+          </tr>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>30&deg;F</td>
+            <td>31&deg;F</td>
+            <td>28&deg;F</td>
+            <td>33&deg;F</td>
+            <td>29&deg;F</td>
+            <td>18&deg;F</td>
+            <td>22&deg;F</td>
+            <td>26&deg;F</td>
+            <td>30&deg;F</td>
+            <td>34&deg;F</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <br>
+    <br>
+    <br>
+    <article class="article1">
+      <h3>Winter Storm to Freeze Hearts on Valentine's Day!</h3>
+      <section class="articlecontent">
+        <picture class="articlepic">
+          <source media="(max-width: 37.5em)" srcset="images/frozenheart-320x240.jpg">
+
+          <source media="(max-width: 64em)" srcset="images/frozenheart-160x120.jpg">
+
+          <source media="(min-width: 64em)" srcset="images/frozenheart-160x120.jpg">
+
+          <img src="images/frozenheart-320x240.jpg" alt="frozen shattering heart">
+        </picture>
+        <p class="town-article">
+          Jack Frost is out to freeze the hearts of any couples brave enough to venture out on Valentine's Day this year. The high is only expected to be 18&deg;F, and the wind will be 45mph from the East, giving us a windchill factor of <b>-4.7&deg;F</b> which is <b>-20.4&deg;C</b>. So our recommendation for couples is to cuddle up safe and sound inside instead of braving those frigid temperatures.
+        </p>
+      </section>
+    </article>
+
+  </main>
+
+  <footer>
+    <aside>
+      What Weather to Expect Outside<br> 123 Main St.<br> Franklin, MU 83454<br> (999) 999-9999<br> contact@outside-expectations.com
+      <br>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | What Weather to Expect in Franklin | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/wu-franklin.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+@media only screen and (min-width: 1200px) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  body {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .weather:hover {
+    box-shadow: 5px 5px 5px gray;
+    border: 1px solid;
+  }
+
+  .weathersum {
+    margin-left: 0%;
+    max-width: 400px;
+  }
+
+  .weatherForecast {
+    max-width: 320px;
+    max-height: 100px;
+    margin-top: 7%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
