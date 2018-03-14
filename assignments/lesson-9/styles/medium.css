@@ -14,7 +14,7 @@
   }
 
   nav ul li a {
-    font-size: 25px;
+    font-size: 21px;
     border-bottom: none;
   }
 
@@ -28,11 +28,11 @@
   }
 
   .citypic {
-    max-width: 300px;
+    max-width: 330px;
   }
 
   .weathersum {
-    margin-left: 5%;
+    margin-left: 3%;
   }
 
   .summary {
@@ -45,6 +45,7 @@
     align-items: center;
     width: 100%;
     padding: 0 20px 0 20px;
+    margin-bottom: 30px;
   }
 
   #tendayforecast {
