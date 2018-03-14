@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   header h1 {
     padding: 10px 1px 1px 1px;
@@ -14,7 +14,7 @@
   }
 
   nav ul li a {
-    font-size: 25px;
+    font-size: 21px;
     border-bottom: none;
   }
 
@@ -28,7 +28,7 @@
   }
 
   .citypic {
-    max-width: 300px;
+    max-width: 330px;
   }
 
   .weathersum {
@@ -45,6 +45,7 @@
     align-items: center;
     width: 100%;
     padding: 0 20px 0 20px;
+    margin-bottom: 30px;
   }
 
   #tendayforecast {
