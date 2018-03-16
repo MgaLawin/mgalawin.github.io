@@ -103,6 +103,13 @@ main h3 {
   text-align: center;
 }
 
+main .subheading {
+  font-family: 'Arima Madurai';
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
 main figure {
   margin: 0 2% .2rem 2%;
   width: 100%;
