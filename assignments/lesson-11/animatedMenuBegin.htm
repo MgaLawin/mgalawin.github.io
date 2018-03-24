@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Menu</title>
+  <meta name="author" content="Jeremy Hawks">
+  <meta name="description" content="animated menu, about us, services, catalog, blog, contact">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/animatedMenu.css">
+  <!--  <script src="scripts/jquery-2.2.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script>
+    $(function() {
+
+      $('.navigation > li').hover(function() {
+        //This code executes when the mouse pointer is over the list item
+
+        $(this).addClass('openSesame');
+
+      }, function() {
+        //This code executes when the mouse pointer leaves the list item
+
+        $(this).removeClass('openSesame');
+
+      });
+
+
+    })
+  </script>
+</head>
+
+<body>
+  <ul class="navigation">
+    <li>About Us</li>
+    <li>Services</li>
+    <li>Catalog</li>
+    <li>Blog</li>
+    <li>Contact</li>
+  </ul>
+</body>
+
+</html>

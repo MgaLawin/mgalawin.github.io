@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Menu</title>
+  <meta name="author" content="Jeremy Hawks">
+  <meta name="description" content="dropdown menu, apples, oranges, peaches, strawberries, kiwi, jam, pie, cider, squash, chocolate, juice concentrate, cake">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/dropdownmenu.css">
+  <!--  <script src="scripts/jquery-2.2.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script>
+    $(function() {
+
+      /*
+            $('.dropdownMenu > li').hover(function() {
+              //Mouseover
+              $(this).children("ul").slideDown(200);
+
+            }, function() {
+              //Mouseout
+              $(this).children("ul").slideUp(200);
+            })
+      */
+
+      $('.dropdownMenu > li').hover(function() {
+        $(this).children("ul").slideToggle(200);
+      })
+
+      $('li:nth-child(3)').css('background-color', 'rgb(248, 95, 95)');
+
+      $('li:eq(3)').css('background-color', 'rgb(248, 0, 95)');
+
+    })
+  </script>
+</head>
+
+<body>
+  <ul class="dropdownMenu">
+    <li>Apples
+      <ul>
+        <li>Jam</li>
+        <li>Pie</li>
+        <li>Cider</li>
+      </ul>
+    </li>
+    <li>Oranges
+      <ul>
+        <li>Squash</li>
+        <li>Chocolate</li>
+      </ul>
+    </li>
+    <li>Peaches
+      <ul>
+        <li>Jam</li>
+        <li>Juice Concentrate</li>
+      </ul>
+    </li>
+    <li>Strawberries
+      <ul>
+        <li>Jam</li>
+        <li>Crush</li>
+        <li>Cake</li>
+      </ul>
+    </li>
+    <li>Kiwi
+      <ul>
+        <li>Crush</li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+
+</html>
