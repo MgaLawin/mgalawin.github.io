@@ -17,6 +17,7 @@ body {
 header,
 nav,
 main,
+aside,
 footer {
   width: 95%;
   margin-left: auto;
@@ -27,7 +28,6 @@ footer {
 
 header {
   display: flex;
-  width: 100%;
   flex-flow: row;
   align-items: center;
 }
