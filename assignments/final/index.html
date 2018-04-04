@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke</title>
+  <meta name="author" content="Jeremy Hawks">
+  <meta name="description" content="mountain bike biking sales service tours Bozeman Montana MT">
+
+  <link href="https://fonts.googleapis.com/css?family=Eczar|Libre+Franklin|Proza+Libre" rel="stylesheet">
+  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet">
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">
+  <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">
+  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">
+  <!-- large/wide/desktop views -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+</head>
+
+<body>
+
+  <header>
+
+    <picture>
+      <source media="(min-width: 375px)" srcset="images/bike-mountain-transparent-98x99.png">
+      <source media="(min-width: 768px)" srcset="images/bike-mountain-transparent-138x140.png">
+      <source media="(min-width: 1150px)" srcset="images/bike-mountain-transparent-138x140.png">
+      <img src="images/bike-mountain-transparent-98x99.png" alt="logo mountain biker near mountain" title="The Mountain Spoke Logo">
+    </picture>
+    <div>
+      <h1>The Mountain Spoke</h1>
+    </div>
+
+  </header>
+
+  <nav>
+
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+
+    <ul id="mainNav" class="hidden flex-container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adventures.html">Adventure Tours</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="service.html">Service Center</a></li>
+      <li class="lastNav"><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="takeAction">
+      <a href="service.html">
+        <picture id="buttonR">
+          <source media="(min-width: 1150px)" srcset="images/Button-R-50x50.png">
+          <source media="(min-width: 768px)" srcset="images/Button-R-50x50.png">
+          <source media="(min-width: 375px)" srcset="images/Button-R-50x50.png">
+          <img src="images/Button-R-50x50.png" alt="button for bike repair and service" title="Bike Repair">
+        </picture>
+      </a>
+      Limited time $20 bike tune-up! <br> <br> <br> Check our events page for other exciting happenings!
+      <a href="events.html">
+        <picture id="buttonE">
+          <source media="(min-width: 1150px)" srcset="images/Button-E-50x50.png">
+          <source media="(min-width: 768px)" srcset="images/Button-E-50x50.png">
+          <source media="(min-width: 375px)" srcset="images/Button-E-50x50.png">
+          <img src="images/Button-E-50x50.png" alt="button for bike events" title="Bike Events">
+        </picture>
+      </a>
+    </section>
+
+    <section id="bikeSales">
+      <a href="sales.html">
+        <picture id="buttonB">
+          <source media="(min-width: 1150px)" srcset="images/Button-B-50x50.png">
+          <source media="(min-width: 768px)" srcset="images/Button-B-50x50.png">
+          <source media="(min-width: 375px)" srcset="images/Button-B-50x50.png">
+          <img src="images/Button-B-50x50.png" alt="button for bike sales" title="Bike Sales">
+        </picture>
+      </a>
+      Need a bike? You've come to the right place! Check out our full line of mountain bikes and accessories!
+    </section>
+
+    <section id="activities">
+      <a href="adventures.html">
+        <picture id="buttonT">
+          <source media="(min-width: 1150px)" srcset="images/Button-T-50x50.png">
+          <source media="(min-width: 768px)" srcset="images/Button-T-50x50.png">
+          <source media="(min-width: 375px)" srcset="images/Button-T-50x50.png">
+          <img src="images/Button-T-50x50.png" alt="button for bike tours" title="Bike Tours">
+        </picture>
+      </a>
+      Seeking adventure? Explore the great outdoors on a guided mountain bike tour on our Adventure Tours page!
+    </section>
+  </main>
+
+  <aside id="contactinfo">
+    <span>The Mountain Spoke <br> 3950 Valley Commons Drive, Bozeman, MT 59718 <br> (999) 999-9999 <br> contact@TheMountainSpoke.com</span>
+  </aside>
+
+  <footer>
+    <span class="footer-bar"> The Mountain Spoke | <a href="resources.html">Resources</a> | <a href="video.html">Video</a> </span>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/townData.js"></script>
+
+</body>
+
+<script>
+  var urlString, urlArray, pageHREF, menu, i, currentURL;
+  urlString = document.location.href;
+  urlArray = urlString.split('/');
+  pageHREF = urlArray[urlArray.length - 1];
+
+  if (pageHREF !== "") {
+    menu = document.querySelectorAll('ul#mainNav li a');
+    for (i = 0; i < menu.length; i++) {
+      currentURL = (menu[i].getAttribute('href'));
+      menu[i].parentNode.className = '';
+      if (currentURL === pageHREF) {
+        menu[i].parentNode.className = 'active';
+      }
+    }
+  }
+</script>
+
+</html>

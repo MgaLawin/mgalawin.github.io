@@ -1,0 +1,160 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 357px;
+  max-width: 375px;
+  max-height: 837px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+}
+
+header,
+nav,
+main,
+footer {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-----HEADER-----*/
+
+header {
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'Eczar', serif;
+  font-size: 26px;
+  text-align: center;
+}
+
+/*-----NAVIGATION-----*/
+
+.hamburger {
+  position: relative;
+  left: 325px;
+  top: -5px;
+  font-size: 1.5rem;
+  border: none;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  background-color: #4388cc;
+  border-radius: 15px;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffcc;
+  border-bottom: 2px solid #0a569e;
+  font-family: 'Proza Libre', sans-serif;
+  font-style: oblique;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+nav ul li a:hover {
+  background-color: #94c0eb;
+}
+
+nav ul li.active a {
+  background-color: #0a569e;
+}
+
+nav ul li.lastNav a {
+  border-bottom: none;
+}
+
+nav ul.hidden {
+  display: none;
+}
+
+/*-----FOOTER-----*/
+
+aside {
+  height: 57px;
+  line-height: 12px;
+  font-size: 10px;
+  background-color: #4388cc;
+  text-align: center;
+  color: #ffffcc;
+  border-radius: 15px;
+}
+
+footer {
+  height: 27px;
+  line-height: 17px;
+  font-size: 14px;
+  background-color: #4388cc;
+  text-align: center;
+  color: #ffffcc;
+  margin-top: 5px;
+  padding: 2px;
+  border-radius: 15px;
+}
+
+span {
+  display: inline block;
+  vertical-align: middle;
+}
+
+footer a {
+  color: #ffffcc;
+}
+
+/*-----HOMEPAGE-----*/
+
+#takeAction {
+  height: 144px;
+  border-style: solid;
+  border: 2px solid rgb(130, 196, 247);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 5px 10px 5px;
+}
+
+#buttonR {
+  padding-right: 5px;
+}
+
+#buttonE {
+  padding: 45px 0px 0px 5px;
+}
+
+#bikeSales {
+  height: 144px;
+  border-style: solid;
+  border: 2px solid rgb(130, 196, 247);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px 5px 10px 5px;
+}
+
+#buttonB {
+  padding-right: 5px;
+}
+
+#activities {
+  height: 144px;
+  border-style: solid;
+  border: 2px solid rgb(130, 196, 247);
+  margin-bottom: 10px;
+  padding: 15px 5px 10px 5px;
+}
