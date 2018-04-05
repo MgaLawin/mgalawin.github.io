@@ -29,38 +29,6 @@
   nav button {
     display: none;
   }
-  /* hamburger button does not need to be shown */
-  .allcontent {
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .citypic {
-    max-width: 330px;
-  }
-
-  .weathersum {
-    margin-left: 3%;
-  }
-
-  .summary {
-    float: right;
-  }
-
-  section.forecast {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px 0 20px;
-    margin-bottom: 30px;
-  }
-
-  #tendayforecast {
-    font-family: 'Archivo Black';
-    font-size: 25px;
-    background-color: #55aa55;
-  }
 
   table {
     border-collapse: collapse;
@@ -85,33 +53,6 @@
   td {
     height: 50px;
     background-color: #88cc88;
-  }
-
-  #cities {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    padding: 0 0px 0 0px;
-  }
-  .articlecontent {
-    display: flex;
-  }
-
-  .articlepic {
-    flex: 0 0 160px;
-  }
-
-  section#townDataInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .tDataInformation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
 
   .gallery-grid {

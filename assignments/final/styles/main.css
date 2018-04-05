@@ -24,7 +24,7 @@ footer {
   margin-right: auto;
 }
 
-/*-----HEADER-----*/
+/*-----HEADERS-----*/
 
 header {
   display: flex;
@@ -32,9 +32,15 @@ header {
   align-items: center;
 }
 
-header h1 {
+h1 {
   font-family: 'Eczar', serif;
   font-size: 26px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Porza Libre', sans-serif;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -123,35 +129,97 @@ footer a {
 
 #takeAction {
   height: 144px;
+  display: grid;
+  grid-template-columns: 2px 54px 2px 239px 2px 54px 2px;
+  grid-auto-rows: 32px 2px 50px 50px 2px;
   border-style: solid;
   border: 2px solid rgb(130, 196, 247);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 20px 5px 10px 5px;
+}
+
+#hta {
+  grid-column: 1 / 8;
+  grid-row: 1;
+  align-items: center;
 }
 
 #buttonR {
-  padding-right: 5px;
+  grid-column: 2;
+  grid-row: 3;
+  padding: 2px;
+}
+
+#textR {
+  grid-column: 4;
+  grid-row: 3;
+  align-items: center;
+}
+
+#textE {
+  grid-column: 4;
+  grid-row: 4;
+  align-items: center;
+}
+
+#buttonE {
+  grid-column: 6;
+  grid-row: 4;
+  padding: 2px;
 }
 
 #bikeSales {
   height: 144px;
   border-style: solid;
   border: 2px solid rgb(130, 196, 247);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 15px 5px 10px 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 2px 54px 2px 245px 2px;
+  grid-auto-rows: 32px 2px 110px 2px;
+}
+
+#hbs {
+  grid-column: 1 / 7;
+  grid-row: 1;
+  align-items: center;
 }
 
 #buttonB {
-  padding-right: 5px;
+  grid-column: 2;
+  grid-row: 3;
+  padding: 2px;
+}
+
+#textB {
+  grid-column: 4;
+  grid-row: 3;
+  align-items: center;
 }
 
 #activities {
   height: 144px;
   border-style: solid;
   border: 2px solid rgb(130, 196, 247);
-  margin-bottom: 10px;
-  padding: 15px 5px 10px 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 2px 54px 2px 245px 2px;
+  grid-auto-rows: 32px 2px 110px 2px;
+}
+
+#ha {
+  grid-column: 1 / 7;
+  grid-row: 1;
+  align-items: center;
+}
+
+#buttonT {
+  grid-column: 2;
+  grid-row: 3;
+  padding: 2px;
+}
+
+#textT {
+  grid-column: 4;
+  grid-row: 3;
+  align-items: center;
 }
