@@ -6,6 +6,12 @@
     max-height: 810px;
   }
 
+  /*-----HEADER-----*/
+  header h1 {
+    font-size: 90px;
+    margin-left: 45px;
+  }
+
   /*-----HOMEPAGE-----*/
   #takeAction {
     height: 486px;
