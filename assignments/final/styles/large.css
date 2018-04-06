@@ -12,13 +12,18 @@
     margin-left: 45px;
   }
 
+  /*-----NAVIGATION-----*/
+  nav ul li a {
+    font-size: 20px;
+  }
+
   /*-----HOMEPAGE-----*/
   #takeAction {
     height: 486px;
     width: 355px;
     grid-template-columns: 2px 340px 2px;
     grid-auto-rows: 2px 104px 2px 60px 2px 96px 96px 2px 104px 2px;
-    margin-right: 9px;
+    margin: 5px 9px 5px 5px;
   }
 
   #buttonR {
