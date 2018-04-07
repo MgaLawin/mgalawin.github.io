@@ -138,7 +138,7 @@
     width: 354px;
     border-style: solid;
     border: 2px solid rgb(130, 196, 247);
-    margin-top: 5px 0px 5px 10px;
+    margin: 5px 0px 5px 0px;
     display: grid;
     grid-template-columns: 10px 110px 2px 222px 10px;
     grid-auto-rows: 32px 2px 108px 2px;
