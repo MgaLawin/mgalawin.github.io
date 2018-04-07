@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tri-City Weather Gallery</title>
+  <title>The Mountain Spoke - Adventure Tours</title>
   <meta name="author" content="Jeremy Hawks">
-  <meta name="description" content="images, pictures, photos, of weather in Franklin, Greenville, and Springfield">
+  <meta name="description" content="mountain bike adventure tours Bozeman Montana MT">
 
-  <link href='https://fonts.googleapis.com/css?family=Archivo+Black|Arima+Madurai|Arsenal' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Eczar|Libre+Franklin|Proza+Libre" rel="stylesheet">
   <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet">
   <!-- normalize useragent/browser defaults -->
@@ -19,6 +19,11 @@
   <link href="styles/large.css" rel="stylesheet">
   <!-- large/wide/desktop views -->
   <link rel="icon" type="image/ico" href="favicon.ico" />
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <!--<script>
+$(function() {}
+</script> -->
+
 </head>
 
 <body>
@@ -26,113 +31,95 @@
   <header>
 
     <picture>
-      <source media="(max-width: 760px)" srcset="images/L-FoggyHill-480x233.jpg">
-
-      <source media="(max-width: 1200px)" srcset="images/L-FoggyHill-800x263.jpg">
-
-      <source media="(min-width: 1200px)" srcset="images/L-FoggyHill-1746x571.jpg">
-
-      <img src="images/L-FoggyHill-480x233.jpg" alt="Foggy hill in Franklin" title="Foggy hill in Franklin">
+      <source media="(min-width: 1150px)" srcset="images/bike-mountain-transparent-138x140.png">
+      <source media="(min-width: 768px)" srcset="images/bike-mountain-transparent-138x140.png">
+      <source media="(min-width: 375px)" srcset="images/bike-mountain-transparent-98x99.png">
+      <img src="images/bike-mountain-transparent-98x99.png" alt="logo mountain biker near mountain" title="The Mountain Spoke Logo">
     </picture>
+    <div>
+      <h1>The Mountain Spoke</h1>
+    </div>
 
-    <h1>Weather Related Images From the Tri-City Area</h1>
-
-    <div class="subheading ">You won't be disappointed with the views here!</div>
   </header>
 
-  <!-- NAVIGATION -->
   <nav>
-    <button onclick="toggleNavMenu()">&#9776;</button>
+
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+
     <ul id="mainNav" class="hidden flex-container">
       <li><a href="index.html">Home</a></li>
-      <li><a href="franklin.html">Franklin</a></li>
-      <li><a href="greenville.html">Greenville</a></li>
-      <li><a href="springfield.html">Springfield</a></li>
-      <li><a href="stormcenter.html">Storm Center</a></li>
-      <li class="sixth"><a href="gallery.html">Gallery</a></li>
+      <li><a href="adventures.html">Adventure Tours</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="service.html">Service Center</a></li>
+      <li class="lastNav"><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
 
-  <!-- CONTENT -->
-  <main>
-    <h1>Gallery of Weather Photos</h1>
-    <section class="gallery-grid">
-      <div class="weather">
-        <img class="weather-pic" src="images/L-Lightning-600x400.jpg" alt="Lightning strikes" title="Lightning strikes">
-        <div class="weather-title">
-          <h3>Lightning</h3>
-          <p>Lightning strikes over the forest in Franklin. Fortunately no one was in the area at the time, but three trees were killed during the storm.<br>Image courtesy of Bing.</p>
-        </div>
-      </div>
-      <div class="weather">
-        <img class="weather-pic" src="images/L-MountainSunset-600x400.jpg" alt="Sunset behind a mountain" title="Sunset behind a mountain">
-        <div class="weather-title">
-          <h3>Sunset</h3>
-          <p>Beautiful sunsets behind the Greenville mountains can provide glorious opportunities for photographers of all levels.<br>Photo courtesy of Jeremy Hawks.</p>
-        </div>
-      </div>
-      <div class="weather">
-        <img class="weather-pic" src="images/L-RainDrop-600x400.jpg" alt="Raindrop from roof gutter" title="Raindrop from a gutter">
-        <div class="weather-title">
-          <h3>Raindrop</h3>
-          <p>It is hard to catch drips with a still camera, but you will have many chances during the frequent rainstorms in Springfield.<br>Photo courtesy of Jeremy Hawks.</p>
-        </div>
-      </div>
-      <div class="weather">
-        <img class="weather-pic" src="images/L-ReadingInAField-600x400.jpg" alt="Girl laying in the grass and flowers reading on a summer day" title="Summer day reading">
-        <div class="weather-title">
-          <h3>Summer Day</h3>
-          <p>Take time to enjoy nature and a good book on a summer day in the fields of Franklin.<br>Photo courtesy of Bing.</p>
-        </div>
-      </div>
-      <div class="weather">
-        <img class="weather-pic" src="images/L-Waterfalls_Frozen_blue_lagoon-600x400.jpg" alt="Sunny Weather" title="Frozen waterfall and pond">
-        <div class="weather-title">
-          <h3>Frozen Waterfall and Pond</h3>
-          <p>Be sure to dress warm if you visit the frozen waterfalls during winter in Greenville.<br>Photo courtesy of Bing.</p>
-        </div>
-      </div>
-      <div class="weather">
-        <img class="weather-pic" src="images/L-Tornado-Lightning-600x400.jpg" alt="Tornado and lightning" title="Tornado and Lightning">
-        <div class="weather-title">
-          <h3>Tornado</h3>
-          <p>Be wary of the occassional tornados and accompanying lightning in Springfield.<br>Photo courtesy of Bing.</p>
-        </div>
-      </div>
+  <main id="adventureContent">
+    <section id="takeActionA">
+      <h2 id="htaA">Meet Our Guides!</h2>
+      <picture id="picTAA">
+        <source media="(min-width: 1150px)" srcset="images/Button-R-100x100.png">
+        <source media="(min-width: 768px)" srcset="images/Button-R-100x100.png">
+        <source media="(min-width: 375px)" srcset="images/Button-R-50x50.png">
+        <img src="images/Button-R-50x50.png" alt="button for bike repair and service" title="Bike Repair">
+      </picture>
+      <p id="textAA">Limited time $20 bike tune-up!</p>
+    </section>
+
+    <section id="tour1">
+      <h2 id="hT1">Mountain Bikes for Sale!</h2>
+      <picture id=picT1>
+        <source media="(min-width: 1150px)" srcset="images/yellow-cartoon-transparent-323x250.png">
+        <source media="(min-width: 768px)" srcset="images/yellow-cartoon-transparent-323x250.png">
+        <source media="(min-width: 375px)" srcset="images/Button-B-50x50.png">
+        <img src="images/Button-B-50x50.png" alt="button for bike sales" title="Bike Sales">
+      </picture>
+      <p id="textT1">Need a bike?</p>
+    </section>
+
+    <section id="tour2">
+      <h2 id="hT2">Trips of a Lifetime!</h2>
+      <picture id="picT2">
+        <source media="(min-width: 1150px)" srcset="images/mountainbike-tour-340x250.jpg">
+        <source media="(min-width: 768px)" srcset="images/mountainbike-tour-340x250.jpg">
+        <source media="(min-width: 375px)" srcset="images/Button-T-50x50.png">
+        <img src="images/Button-T-50x50.png" alt="button for bike tours" title="Bike Tours">
+      </picture>
+      <p id="textT2">Seeking adventure?</p>
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <aside id="contactinfo">
+    <span>The Mountain Spoke <br> 3950 Valley Commons Drive, Bozeman, MT 59718 <br> (999) 999-9999 <br> contact@TheMountainSpoke.com</span>
+  </aside>
 
   <footer>
-    <aside id="contactinfo">
-      What Weather to Expect Outside<br> 123 Main St.<br> Franklin, MN 55333<br> (999) 999-9999<br> contact@outside-expectations.com
-      <br>
-    </aside>
-    <p class="footer-bar">&copy;2018 All Rights Reserved | What Weather to Expect in Franklin | <span id="currentdate">Current Date Placeholder</span></p>
+    <span class="footer-bar"> The Mountain Spoke | <a href="resources.html">Resources</a> | <a href="video.html">Video</a> </span>
   </footer>
 
   <script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
 
 </body>
 
-  <script>
-    var urlString, urlArray, pageHREF, menu, i, currentURL;
-    urlString = document.location.href;
-    urlArray = urlString.split('/');
-    pageHREF = urlArray[urlArray.length - 1];
+<script>
+  var urlString, urlArray, pageHREF, menu, i, currentURL;
+  urlString = document.location.href;
+  urlArray = urlString.split('/');
+  pageHREF = urlArray[urlArray.length - 1];
 
-    if (pageHREF !== "") {
-      menu = document.querySelectorAll('ul#mainNav li a');
-      for (i = 0; i < menu.length; i++) {
-        currentURL = (menu[i].getAttribute('href'));
-        menu[i].parentNode.className = '';
-        if (currentURL === pageHREF) {
-          menu[i].parentNode.className = 'active';
-        }
+  if (pageHREF !== "") {
+    menu = document.querySelectorAll('ul#mainNav li a');
+    for (i = 0; i < menu.length; i++) {
+      currentURL = (menu[i].getAttribute('href'));
+      menu[i].parentNode.className = '';
+      if (currentURL === pageHREF) {
+        menu[i].parentNode.className = 'active';
       }
     }
-  </script>
+  }
+
+</script>
 
 </html>

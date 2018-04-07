@@ -2,75 +2,124 @@
 <html lang="en-us">
 
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thanks</title>
-  <meta name="author" content="Jeremy Hawks">
-  <meta name="description" content="thank you for submitting a storm alert">
-  <!-- external style references in the proper cascading order -->
-  <link href='https://fonts.googleapis.com/css?family=Archivo+Black|Arima+Madurai|Arsenal' rel='stylesheet'>
-  <!-- Google API font reference -->
-  <link href="styles/normalize.css" rel="stylesheet">
-  <!-- normalize useragent/browser defaults -->
-  <link href="styles/main.css" rel="stylesheet">
-  <!-- default styles - small/phone views -->
-  <link href="styles/medium.css" rel="stylesheet">
-  <!-- medium/tablet views -->
-  <link href="styles/large.css" rel="stylesheet">
-  <!-- large/wide/desktop views -->
-  <link rel="icon" type="image/ico" href="favicon.ico" />
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke - Adventure Tours</title>
+    <meta name="author" content="Jeremy Hawks">
+    <meta name="description" content="mountain bike adventure tours Bozeman Montana MT">
 
-<body>
+    <link href="https://fonts.googleapis.com/css?family=Eczar|Libre+Franklin|Proza+Libre" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!--<script>
+$(function() {}
+</script> -->
 
-  <header>
+  </head>
 
-    <picture>
-      <source media="(max-width: 760px)" srcset="images/L-FoggyHill-480x233.jpg">
+  <body>
 
-      <source media="(max-width: 1200px)" srcset="images/L-FoggyHill-800x263.jpg">
+    <header>
 
-      <source media="(min-width: 1200px)" srcset="images/L-FoggyHill-1746x571.jpg">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="images/bike-mountain-transparent-138x140.png">
+        <source media="(min-width: 768px)" srcset="images/bike-mountain-transparent-138x140.png">
+        <source media="(min-width: 375px)" srcset="images/bike-mountain-transparent-98x99.png">
+        <img src="images/bike-mountain-transparent-98x99.png" alt="logo mountain biker near mountain" title="The Mountain Spoke Logo">
+      </picture>
+      <div>
+        <h1>The Mountain Spoke</h1>
+      </div>
 
-      <img src="images/L-FoggyHill-480x233.jpg" alt="Foggy hill in Franklin" title="Foggy hill in Franklin">
-    </picture>
+    </header>
 
-    <h1>Report a storm in the Tri-City Area</h1>
+    <nav>
 
-    <div class="subheading ">You won't be disappointed with the weather here!</div>
-  </header>
+      <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul id="mainNav" class="hidden flex-container">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="franklin.html">Franklin</a></li>
-      <li><a href="greenville.html">Greenville</a></li>
-      <li><a href="springfield.html">Springfield</a></li>
-      <li><a href="stormcenter.html">Storm Center</a></li>
-      <li class="sixth"><a href="gallery.html">Gallery</a></li>
-    </ul>
-  </nav>
+      <ul id="mainNav" class="hidden flex-container">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adventures.html">Adventure Tours</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="service.html">Service Center</a></li>
+        <li class="lastNav"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
 
-  <!-- CONTENT -->
-  <main>
-    <h1 id="thanksHead">Thanks for your storm alert submission!</h1>
-  </main>
+    <main id="adventureContent">
+      <section id="takeActionA">
+        <h2 id="htaA">Meet Our Guides!</h2>
+        <picture id="picTAA">
+          <source media="(min-width: 1150px)" srcset="images/Button-R-100x100.png">
+          <source media="(min-width: 768px)" srcset="images/Button-R-100x100.png">
+          <source media="(min-width: 375px)" srcset="images/Button-R-50x50.png">
+          <img src="images/Button-R-50x50.png" alt="button for bike repair and service" title="Bike Repair">
+        </picture>
+        <p id="textAA">Limited time $20 bike tune-up!</p>
+      </section>
 
-  <!-- FOOTER -->
+      <section id="tour1">
+        <h2 id="hT1">Mountain Bikes for Sale!</h2>
+        <picture id=picT1>
+          <source media="(min-width: 1150px)" srcset="images/yellow-cartoon-transparent-323x250.png">
+          <source media="(min-width: 768px)" srcset="images/yellow-cartoon-transparent-323x250.png">
+          <source media="(min-width: 375px)" srcset="images/Button-B-50x50.png">
+          <img src="images/Button-B-50x50.png" alt="button for bike sales" title="Bike Sales">
+        </picture>
+        <p id="textT1">Need a bike?</p>
+      </section>
 
-  <footer>
+      <section id="tour2">
+        <h2 id="hT2">Trips of a Lifetime!</h2>
+        <picture id="picT2">
+          <source media="(min-width: 1150px)" srcset="images/mountainbike-tour-340x250.jpg">
+          <source media="(min-width: 768px)" srcset="images/mountainbike-tour-340x250.jpg">
+          <source media="(min-width: 375px)" srcset="images/Button-T-50x50.png">
+          <img src="images/Button-T-50x50.png" alt="button for bike tours" title="Bike Tours">
+        </picture>
+        <p id="textT2">Seeking adventure?</p>
+      </section>
+    </main>
+
     <aside id="contactinfo">
-      What Weather to Expect Outside<br> 123 Main St.<br> Franklin, MN 55333<br> (999) 999-9999<br> contact@outside-expectations.com
-      <br>
+      <span>The Mountain Spoke <br> 3950 Valley Commons Drive, Bozeman, MT 59718 <br> (999) 999-9999 <br> contact@TheMountainSpoke.com</span>
     </aside>
-    <p class="footer-bar">&copy;2018 All Rights Reserved | What Weather to Expect in Franklin | <span id="currentdate">Current Date Placeholder</span></p>
-  </footer>
 
-  <script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
+    <footer>
+      <span class="footer-bar"> The Mountain Spoke | <a href="resources.html">Resources</a> | <a href="video.html">Video</a> </span>
+    </footer>
 
-</body>
+    <script src="scripts/hamburger.js"></script>
+
+  </body>
+
+  <script>
+    var urlString, urlArray, pageHREF, menu, i, currentURL;
+    urlString = document.location.href;
+    urlArray = urlString.split('/');
+    pageHREF = urlArray[urlArray.length - 1];
+
+    if (pageHREF !== "") {
+      menu = document.querySelectorAll('ul#mainNav li a');
+      for (i = 0; i < menu.length; i++) {
+        currentURL = (menu[i].getAttribute('href'));
+        menu[i].parentNode.className = '';
+        if (currentURL === pageHREF) {
+          menu[i].parentNode.className = 'active';
+        }
+      }
+    }
+
+  </script>
 
 </html>

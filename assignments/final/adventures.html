@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>What Weather to Expect in Franklin</title>
+  <title>The Mountain Spoke - Adventure Tours</title>
   <meta name="author" content="Jeremy Hawks">
-  <meta name="description" content="current weather, ten (10) day forecast, news, Franklin">
+  <meta name="description" content="mountain bike adventure tours Bozeman Montana MT">
 
-  <link href='https://fonts.googleapis.com/css?family=Archivo+Black|Arima+Madurai|Arsenal' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Eczar|Libre+Franklin|Proza+Libre" rel="stylesheet">
   <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet">
   <!-- normalize useragent/browser defaults -->
@@ -19,6 +19,11 @@
   <link href="styles/large.css" rel="stylesheet">
   <!-- large/wide/desktop views -->
   <link rel="icon" type="image/ico" href="favicon.ico" />
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <!--<script>
+$(function() {}
+</script> -->
+
 </head>
 
 <body>
@@ -26,134 +31,96 @@
   <header>
 
     <picture>
-      <source media="(max-width: 760px)" srcset="images/L-FoggyHill-480x233.jpg">
-
-      <source media="(max-width: 1200px)" srcset="images/L-FoggyHill-800x263.jpg">
-
-      <source media="(min-width: 1200px)" srcset="images/L-FoggyHill-1746x571.jpg">
-
-      <img src="images/L-FoggyHill-480x233.jpg" alt="Foggy hill in Franklin" title="Foggy hill in Franklin">
+      <source media="(min-width: 1150px)" srcset="images/bike-mountain-transparent-138x140.png">
+      <source media="(min-width: 768px)" srcset="images/bike-mountain-transparent-138x140.png">
+      <source media="(min-width: 375px)" srcset="images/bike-mountain-transparent-98x99.png">
+      <img src="images/bike-mountain-transparent-98x99.png" alt="logo mountain biker near mountain" title="The Mountain Spoke Logo">
     </picture>
+    <div>
+      <h1>The Mountain Spoke</h1>
+    </div>
 
-    <h1>What Weather to Expect in Franklin</h1>
-
-    <div class="subheading ">Where You Will Grow!</div>
   </header>
 
-  <!-- site navigation use placeholder references -->
   <nav>
-    <button onclick="toggleNavMenu()">&#9776;</button>
+
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+
     <ul id="mainNav" class="hidden flex-container">
       <li><a href="index.html">Home</a></li>
-      <li><a href="franklin.html">Franklin</a></li>
-      <li><a href="greenville.html">Greenville</a></li>
-      <li><a href="springfield.html">Springfield</a></li>
-      <li><a href="stormcenter.html">Storm Center</a></li>
-      <li class="sixth"><a href="gallery.html">Gallery</a></li>
+      <li><a href="adventures.html">Adventure Tours</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="service.html">Service Center</a></li>
+      <li class="lastNav"><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
 
-  <main class="wrapper">
-    <section class="allcontent">
-      <section class="citypic">
-        <h2 class="mainheader1">The City of Franklin</h2>
-        <picture class="pic1">
-          <source media="(max-width: 760px)" srcset="images/franklinweather-640x426.jpg">
-
-          <source media="(max-width: 1200px)" srcset="images/franklinweather-400x266.jpg">
-
-          <source media="(min-width: 1200px)" srcset="images/franklinweather-400x266.jpg">
-
-          <img src="images/franklinweather-640x426.jpg" alt="snow covered city and statue">
-        </picture>
-      </section>
-      <section class="weathersum">
-        <h3 class="mainheader2">Weather Summary</h3>
-        <picture class="pic2">
-          <img src="images/cold-figure-thermometer-134x200.jpg" alt="cold figure holding thermometer">
-        </picture>
-        <div class="summary">
-          <p>Current Weather: <span id="weatherString"></span></p>
-          <p>Current Temp: <span id="currentTemp"></span>&deg;F</p>
-          <p>Wind Speed: <span id="windSpeed"></span>mph <span id="windDir"></span></p>
-          <img id="w-icon" src="" alt="Current Weather">
-          <p>Windchill: <span id="windChillTempValue"></span>&deg;F</p>
-        </div>
-      </section>
-      <section class="weatherForecast">
-        <h3 class="mainheader3">Forecast</h3>
-        <div class="liveForecast">
-          <p><span id="forecastText"></span></p>
-        </div>
-      </section>
-    </section>
-    <section class="forecast">
-      <table>
-        <thead>
-          <tr>
-            <th colspan="10" id="tendayforecast"> 10 Day Forecast</th>
-          </tr>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>30&deg;F</td>
-            <td>31&deg;F</td>
-            <td>28&deg;F</td>
-            <td>33&deg;F</td>
-            <td>29&deg;F</td>
-            <td>18&deg;F</td>
-            <td>22&deg;F</td>
-            <td>26&deg;F</td>
-            <td>30&deg;F</td>
-            <td>34&deg;F</td>
-          </tr>
-        </tbody>
-      </table>
+  <main id="adventureContent">
+    <section id="takeActionA">
+      <h2 id="htaA">Come Meet Our Tour Guides!</h2>
+      <picture id="guide1">
+        <source media="(min-width: 1150px)" srcset="images/Guide1-70x70.jpg">
+        <source media="(min-width: 768px)" srcset="images/Guide1-70x70.jpg">
+        <source media="(min-width: 375px)" srcset="images/Guide1-70x70.jpg">
+        <img src="images/Guide1-70x70.jpg" alt="headshot of guide 1 Mercedes" title="Guide Mercedes">
+      </picture>
+      <picture id="guide2">
+        <source media="(min-width: 1150px)" srcset="images/Guide2-70x70.jpg">
+        <source media="(min-width: 768px)" srcset="images/Guide2-70x70.jpg">
+        <source media="(min-width: 375px)" srcset="images/Guide2-70x70.jpg">
+        <img src="images/Guide2-70x70.jpg" alt="headshot of guide 2 Jeremy" title="Guide Jeremy">
+      </picture>
+      <picture id="guide3">
+        <source media="(min-width: 1150px)" srcset="images/Guide3-70x70.jpg">
+        <source media="(min-width: 768px)" srcset="images/Guide3-70x70.jpg">
+        <source media="(min-width: 375px)" srcset="images/Guide3-70x70.jpg">
+        <img src="images/Guide3-70x70.jpg" alt="headshot of guide 3 Kimberly" title="Guide Kimberly">
+      </picture>
+      <picture id="guide4">
+        <source media="(min-width: 1150px)" srcset="images/Guide4-70x70.jpg">
+        <source media="(min-width: 768px)" srcset="images/Guide4-70x70.jpg">
+        <source media="(min-width: 375px)" srcset="images/Guide4-70x70.jpg">
+        <img src="images/Guide4-70x70.jpg" alt="headshot of guide 4 Scott" title="Guide Scott">
+      </picture>
+      <p id="guide1name">Mercedes</p>
+      <p id="guide2name">Kimberly</p>
+      <p id="guide3name">Jeremy</p>
+      <p id="guide4name">Scott</p>
     </section>
 
-    <article class="article1">
-      <h3>Winter Storm to Freeze Hearts on Valentine's Day!</h3>
-      <section class="articlecontent">
-        <picture class="articlepic">
-          <source media="(max-width: 37.5em)" srcset="images/frozenheart-320x240.jpg">
+    <section id="tour1">
+      <h2 id="hT1">The Paradise Tour!</h2>
+      <picture id=picT1>
+        <source media="(min-width: 1150px)" srcset="images/mountainbike-tour-100x100.jpg">
+        <source media="(min-width: 768px)" srcset="images/mountainbike-tour-100x100.jpg">
+        <source media="(min-width: 375px)" srcset="images/mountainbike-tour-100x100.jpg">
+        <img src="images/mountainbike-tour-100x100.jpg" alt="biker on Paradise bike trail" title="Paradise Trail">
+      </picture>
+      <p id="textT1">Just starting out on a bike? Take our 5-mile beginner's tour along the Paradise Trail for just $20</p>
+    </section>
 
-          <source media="(max-width: 64em)" srcset="images/frozenheart-160x120.jpg">
-
-          <source media="(min-width: 64em)" srcset="images/frozenheart-160x120.jpg">
-
-          <img src="images/frozenheart-320x240.jpg" alt="frozen shattering heart">
-        </picture>
-        <p class="town-article">
-          Jack Frost is out to freeze the hearts of any couples brave enough to venture out on Valentine's Day this year. The high is only expected to be 18&deg;F, and the wind will be 45mph from the East, giving us a windchill factor of <b>-4.7&deg;F</b> which is <b>-20.4&deg;C</b>. So our recommendation for couples is to cuddle up safe and sound inside instead of braving those frigid temperatures.
-        </p>
-      </section>
-    </article>
-
+    <section id="tour2">
+      <h2 id="hT2">The Enchantments Trail</h2>
+      <picture id="picT2">
+        <source media="(min-width: 1150px)" srcset="images/extreme-mountain-biking-100x100.jpg">
+        <source media="(min-width: 768px)" srcset="images/extreme-mountain-biking-100x100.jpg">
+        <source media="(min-width: 375px)" srcset="images/extreme-mountain-biking-100x100.jpg">
+        <img src="images/extreme-mountain-biking-100x100.jpg" alt="biker on Enchantments bike trail climbing rocks" title="Enchantment Trail">
+      </picture>
+      <p id="textT2">Ready for something a bit tougher? Only $200 to try our 25-mile expert's tour along the Enchantments Trail</p>
+    </section>
   </main>
 
+  <aside id="contactinfo">
+    <span>The Mountain Spoke <br> 3950 Valley Commons Drive, Bozeman, MT 59718 <br> (999) 999-9999 <br> contact@TheMountainSpoke.com</span>
+  </aside>
+
   <footer>
-    <aside id="contactinfo">
-      What Weather to Expect Outside<br> 123 Main St.<br> Franklin, MN 55333<br> (999) 999-9999<br> contact@outside-expectations.com
-      <br>
-    </aside>
-    <p class="footer-bar">&copy;2018 All Rights Reserved | What Weather to Expect in Franklin | <span id="currentdate">Current Date Placeholder</span></p>
+    <span class="footer-bar"> The Mountain Spoke | <a href="resources.html">Resources</a> | <a href="video.html">Video</a> </span>
   </footer>
 
   <script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
-  <script src="scripts/wu-franklin.js"></script>
 
 </body>
 
