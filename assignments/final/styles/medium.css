@@ -90,7 +90,7 @@
   #textB {
     grid-column: 2;
     grid-row: 6;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   #activities {
@@ -114,17 +114,21 @@
   #textT {
     grid-column: 2;
     grid-row: 6;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   /*-----ADVENTURE-TOURS-CONTENT-----*/
   #adventureContent {
     display: flex;
     flex-wrap: wrap;
+
   }
 
   #takeActionA {
     height: 144px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
     border-style: solid;
     border: 2px solid rgb(130, 196, 247);
     display: grid;
@@ -140,8 +144,8 @@
     border: 2px solid rgb(130, 196, 247);
     margin: 5px 0px 5px 0px;
     display: grid;
-    grid-template-columns: 10px 110px 2px 222px 10px;
-    grid-auto-rows: 32px 2px 108px 2px;
+    grid-template-columns: 6px auto 6px;
+    grid-auto-rows: 32px 2px 250px 2px auto 2px;
     text-align: center;
   }
 
@@ -153,15 +157,16 @@
   }
 
   #picT1 {
-    grid-column: 1 /3;
+    grid-column: 1 / 7;
     grid-row: 3;
     align-items: center;
   }
 
   #textT1 {
-    grid-column: 4;
-    grid-row: 3;
+    grid-column: 2 / 7;
+    grid-row: 5;
     align-items: center;
+    font-size: 25px;
   }
 
   #tour2 {
@@ -171,8 +176,8 @@
     border: 2px solid rgb(130, 196, 247);
     margin: 5px 0px 5px 21px;
     display: grid;
-    grid-template-columns: 10px 110px 2px 222px 10px;
-    grid-auto-rows: 32px 2px 108px 2px;
+    grid-template-columns: 6px auto 6px;
+    grid-auto-rows: 32px 2px 250px 2px auto 2px;
     text-align: center;
   }
 
@@ -184,29 +189,20 @@
   }
 
   #picT2 {
-    grid-column: 1 /3;
+    grid-column: 1 / 7;
     grid-row: 3;
     align-items: center;
   }
 
   #textT2 {
-    grid-column: 4;
-    grid-row: 3;
+    grid-column: 2 / 7;
+    grid-row: 5;
     align-items: center;
+    font-size: 25px;
   }
   /*-----EVENTS-CONTENT-----*/
-
-
   /*-----SALES-CONTENT-----*/
-
-
   /*-----SEVICE-CENTER-CONTENT-----*/
-
-
   /*-----CONTACT-US-CONTENT-----*/
-
-
   /*-----RESOURCES-CONTENT-----*/
-
-
   /*-----VIDEO-CONTENT-----*/
