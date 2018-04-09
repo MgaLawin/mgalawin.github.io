@@ -660,7 +660,7 @@ video::-webkit-media-controls-panel {
 
 #vid {
   display: block;
-  width: 480px;
+  width: 350px;
   margin-left: auto;
   margin-right: auto;
 }

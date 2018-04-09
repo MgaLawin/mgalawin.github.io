@@ -296,3 +296,6 @@
   /*-----CONTACT-US-CONTENT-----*/
   /*-----RESOURCES-CONTENT-----*/
   /*-----VIDEO-CONTENT-----*/
+  #vid {
+    width: 480px;
+  }
