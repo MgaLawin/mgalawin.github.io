@@ -529,15 +529,15 @@ input.resetBtn {
   font-size: 24px;
 }
 
+/*
 #eventsPicLarge {
-
-  height: 810px;
   border-style: solid;
   border: 2px solid rgb(130, 196, 247);
   align-items: center;
-  margin-left: 2px;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
+*/
 
 /*-----SALES-CONTENT-----*/
 
@@ -575,6 +575,10 @@ input.resetBtn {
 
 /*-----SEVICE-CENTER-CONTENT-----*/
 
+#hService {
+  font-size: 40px;
+}
+
 th,
 td {
   padding: 5px;
@@ -592,6 +596,7 @@ table {
   border-spacing: 0;
   border: 1px solid black;
   color: black;
+  border-collapse: collapse;
 }
 
 .tableHeading {
@@ -599,18 +604,63 @@ table {
   font-size: 1.5em;
 }
 
-/*-----CONTACT-US-CONTENT-----*/
-
-.googleMap {
-  max-width: 350px;
-
+tr {
+  background-color: #94c0eb;
 }
 
-#contactForm {
-  max-width: 350px;
+tr.row1 {
+  background-color: #4388cc;
   text-align: center;
+  color: #ffffcc;
+}
+
+/*-----CONTACT-US-CONTENT-----*/
+
+iframe {
+  text-align: center;
+  margin: 0 auto;
+  height: 350px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form#contactUs {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+form#comments2 {
+  margin-bottom: 5px;
+}
+
+/*-----THANKS-PAGE-----*/
+
+#thanksPic {
+  display: block;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 
 /*-----RESOURCES-CONTENT-----*/
 
+#resources1 {
+  margin-bottom: 20px;
+}
+
 /*-----VIDEO-CONTENT-----*/
+
+video::-webkit-media-controls-panel {
+  display: flex !important;
+  opacity: 1 !important;
+}
+
+#vid {
+  display: block;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
