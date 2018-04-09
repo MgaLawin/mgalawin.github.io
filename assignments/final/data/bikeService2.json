@@ -1,33 +1,67 @@
 {
-  "services" : [
+  "services": [
     {
       "platinum": "$125",
       "diamond": "$95",
       "gold": "$55",
+      "currentPopulation": 30458,
+      "averageRainfall": 21,
+      "events": [
+        "March 4: March to the Drum of Donuts",
+        "September 5 - 11: Founder Days",
+        "December 1 - 26: Christmas in the Heart"
+      ]
     },
     {
       "forkFull": "$100.00",
       "forkSeal": "$17.95",
       "forkTool": "$7.95",
       "forkFluid": "$4.95",
+      "averageRainfall": 25,
+      "events": [
+        "February 10-12: Greenbration",
+        "May 8 - 18: Greenville Founder Days",
+        "June 20: Verde and Valiant Day",
+        "November 15-16: Greensome Gathering"
+      ]
     },
+
     {
       "shockService": "$100.00",
       "shockSeal": "$24.95",
       "shock8": "$24.95",
       "shock10": "$24.95",
+      "averageRainfall": 39,
+      "events": [
+        "July 4: A Blaze of Glory",
+        "October 20: Fall through Fall"
+      ]
     },
+
     {
       "flatRepair": "$7.00",
       "wheelTrue": "$25.50",
       "hubService": "$28.00",
       "wheelBuild": "$57.00",
+      "averageRainfall": 17,
+      "events": [
+        "January 8: Spring into Winter",
+        "April 10-20: Celebration of Life",
+        "July 31-Aug 15: Dog Days of Summer Festival"
+      ]
     },
+
     {
       "brakes": "$15 each",
       "chain": "$10",
       "deraileur": "$10",
       "drivetrain": "$100",
+      "averageRainfall": 17,
+      "events": [
+        "January 8: Spring into Winter",
+        "April 10-20: Celebration of Life",
+        "July 31-Aug 15: Dog Days of Summer Festival"
+      ]
     }
   ]
 }
