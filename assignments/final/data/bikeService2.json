@@ -1,0 +1,33 @@
+{
+  "services" : [
+    {
+      "platinum": "$125",
+      "diamond": "$95",
+      "gold": "$55",
+    },
+    {
+      "forkFull": "$100.00",
+      "forkSeal": "$17.95",
+      "forkTool": "$7.95",
+      "forkFluid": "$4.95",
+    },
+    {
+      "shockService": "$100.00",
+      "shockSeal": "$24.95",
+      "shock8": "$24.95",
+      "shock10": "$24.95",
+    },
+    {
+      "flatRepair": "$7.00",
+      "wheelTrue": "$25.50",
+      "hubService": "$28.00",
+      "wheelBuild": "$57.00",
+    },
+    {
+      "brakes": "$15 each",
+      "chain": "$10",
+      "deraileur": "$10",
+      "drivetrain": "$100",
+    }
+  ]
+}
