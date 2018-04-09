@@ -56,39 +56,198 @@ $(function() {}
     </ul>
   </nav>
 
-  <main id="adventureContent">
-    <section id="takeActionA">
-      <h2 id="htaA">Meet Our Guides!</h2>
-      <picture id="picTAA">
-        <source media="(min-width: 1150px)" srcset="images/Button-R-100x100.png">
-        <source media="(min-width: 768px)" srcset="images/Button-R-100x100.png">
-        <source media="(min-width: 375px)" srcset="images/Button-R-50x50.png">
-        <img src="images/Button-R-50x50.png" alt="button for bike repair and service" title="Bike Repair">
-      </picture>
-      <p id="textAA">Limited time $20 bike tune-up!</p>
-    </section>
+  <main id="serviceContent">
 
-    <section id="tour1">
-      <h2 id="hT1">Mountain Bikes for Sale!</h2>
-      <picture id=picT1>
-        <source media="(min-width: 1150px)" srcset="images/yellow-cartoon-transparent-323x250.png">
-        <source media="(min-width: 768px)" srcset="images/yellow-cartoon-transparent-323x250.png">
-        <source media="(min-width: 375px)" srcset="images/Button-B-50x50.png">
-        <img src="images/Button-B-50x50.png" alt="button for bike sales" title="Bike Sales">
-      </picture>
-      <p id="textT1">Need a bike?</p>
-    </section>
+    <h2>SERVICES</h2>
+    <h3 class="tableHeading">Tune Up</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Level</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Platinum</td>
+          <td>Complete bike detail, adjustment, and cleaning</td>
+          <td><span id="platinum"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Diamond</td>
+          <td>Detail, adjustment, and wipe down</td>
+          <td><span id="diamond"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Gold</td>
+          <td>Saftey Check and wipe down</td>
+          <td><span id="gold"></span></td>
+        </tr>
+      </tbody>
+    </table>
 
-    <section id="tour2">
-      <h2 id="hT2">Trips of a Lifetime!</h2>
-      <picture id="picT2">
-        <source media="(min-width: 1150px)" srcset="images/mountainbike-tour-340x250.jpg">
-        <source media="(min-width: 768px)" srcset="images/mountainbike-tour-340x250.jpg">
-        <source media="(min-width: 375px)" srcset="images/Button-T-50x50.png">
-        <img src="images/Button-T-50x50.png" alt="button for bike tours" title="Bike Tours">
-      </picture>
-      <p id="textT2">Seeking adventure?</p>
-    </section>
+    <h3 class="tableHeading">Fork Services</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Full Fork Service</td>
+          <td>Complete fork repair</td>
+          <td><span id="forkFull"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Mega Air Fork Seal Kit</td>
+          <td>Seal forks</td>
+          <td><span id="forkSeal"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Cap Tool for Mega Air Fork</td>
+          <td>Fork repair tool</td>
+          <td><span id="forkTool"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Fork Shock Suspension Fluid</td>
+          <td>Fork fluids</td>
+          <td><span id="forkFluid"></span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="tableHeading">Shock Services</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Full Shock Service</td>
+          <td>Complete shock repair</td>
+          <td><span id="shockFull"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Mega Air Shock Seal Kit</td>
+          <td>Seal shocks</td>
+          <td><span id="shockSeal"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Bicycle Shock 8mm Seal Kit</td>
+          <td>8mm Shock Seal Kit</td>
+          <td><span id="shock8"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Bicycle Shock 10mm Seal Kit</td>
+          <td>10mm Shock Seal Kit</td>
+          <td><span id="shock10"></span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="tableHeading">Wheel Services</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tire Puncture Repair</td>
+          <td>Seal or replace tube and tire</td>
+          <td><span id="flatRepair"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Wheel True</td>
+          <td>Wheel True + $1.50 per spoke replaced</td>
+          <td><span id="wheelTrue"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Hub Service</td>
+          <td>Hub Service (per hub)</td>
+          <td><span id="hubService"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Wheel Build</td>
+          <td>Wheel Build (per wheel)</td>
+          <td><span id="wheelBuild"></span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="tableHeading">Adjustments</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Service
+          </th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Adjust Brakes</td>
+          <td>Tensioning and tune up</td>
+          <td><span id="brakes"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Replace Chain</td>
+          <td>Install chain (BYOC, chain not included)</td>
+          <td><span id="chain"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Adjust Deraileur</td>
+          <td>Tensioning and tune up</td>
+          <td><span id="deraileur"></span></td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>Adjust Drivetrain </td>
+          <td>Tensioning and tune up</td>
+          <td><span id="drivetrain"></span></td>
+        </tr>
+      </tbody>
+    </table>
+
   </main>
 
   <aside id="contactinfo">
@@ -100,6 +259,7 @@ $(function() {}
   </footer>
 
   <script src="scripts/hamburger.js"></script>
+  <script src="scripts/serviceData.js"></script>
 
 </body>
 
@@ -119,7 +279,6 @@ $(function() {}
       }
     }
   }
-
 </script>
 
 </html>

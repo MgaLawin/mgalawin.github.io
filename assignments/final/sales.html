@@ -1,125 +1,147 @@
 <!doctype html>
 <html lang="en-us">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Mountain Spoke - Adventure Tours</title>
-    <meta name="author" content="Jeremy Hawks">
-    <meta name="description" content="mountain bike adventure tours Bozeman Montana MT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke - Adventure Tours</title>
+  <meta name="author" content="Jeremy Hawks">
+  <meta name="description" content="mountain bike adventure tours Bozeman Montana MT">
 
-    <link href="https://fonts.googleapis.com/css?family=Eczar|Libre+Franklin|Proza+Libre" rel="stylesheet">
-    <!-- Google API font reference -->
-    <link href="styles/normalize.css" rel="stylesheet">
-    <!-- normalize useragent/browser defaults -->
-    <link href="styles/main.css" rel="stylesheet">
-    <!-- default styles - small/phone views -->
-    <link href="styles/medium.css" rel="stylesheet">
-    <!-- medium/tablet views -->
-    <link href="styles/large.css" rel="stylesheet">
-    <!-- large/wide/desktop views -->
-    <link rel="icon" type="image/ico" href="favicon.ico" />
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <!--<script>
-$(function() {}
-</script> -->
+  <link href="https://fonts.googleapis.com/css?family=Eczar|Libre+Franklin|Proza+Libre" rel="stylesheet">
+  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet">
+  <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">
+  <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">
+  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">
+  <!-- large/wide/desktop views -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.sales').addClass("hidden");
 
-  </head>
+      $('.sales').click(function() {
+        var $this = $(this);
 
-  <body>
+        if ($this.hasClass("hidden")) {
+          $(this).removeClass("hidden").addClass("visible");
 
-    <header>
+        } else {
+          $(this).removeClass("visible").addClass("hidden");
+        }
+      });
+    });
+  </script>
 
-      <picture>
-        <source media="(min-width: 1150px)" srcset="images/bike-mountain-transparent-138x140.png">
-        <source media="(min-width: 768px)" srcset="images/bike-mountain-transparent-138x140.png">
-        <source media="(min-width: 375px)" srcset="images/bike-mountain-transparent-98x99.png">
-        <img src="images/bike-mountain-transparent-98x99.png" alt="logo mountain biker near mountain" title="The Mountain Spoke Logo">
-      </picture>
-      <div>
-        <h1>The Mountain Spoke</h1>
+</head>
+
+<body>
+
+  <header>
+
+    <picture>
+      <source media="(min-width: 1150px)" srcset="images/bike-mountain-transparent-138x140.png">
+      <source media="(min-width: 768px)" srcset="images/bike-mountain-transparent-138x140.png">
+      <source media="(min-width: 375px)" srcset="images/bike-mountain-transparent-98x99.png">
+      <img src="images/bike-mountain-transparent-98x99.png" alt="logo mountain biker near mountain" title="The Mountain Spoke Logo">
+    </picture>
+    <div>
+      <h1>The Mountain Spoke</h1>
+    </div>
+
+  </header>
+
+  <nav>
+
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+
+    <ul id="mainNav" class="hidden flex-container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="adventures.html">Adventure Tours</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="service.html">Service Center</a></li>
+      <li class="lastNav"><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main class="flex-container" id="salesContent">
+    <h2 id="hBike">Please click on the bike you are interested in for more details.</h2>
+    <div class="sales" id="bike1">
+      <h3> Steppenwolf Tundra $2,499.00</h3>
+      <img class="bikes" src="images/bike-SteppenwolfTundra-218x218.jpg" alt="Steppenwolf Tundra bike bicycle mountain" title="Steppenwolf Tundra">
+      <div class="bikeInfo">
+        <p>Speeds: 20</p>
+        <p>Frame: 20" Carbon Composite</p>
+        <p>Wheels: 20" x 2.25"</p>
+        <p>Brakes: Avid XX 180/180mm</p>
+        <p>Assembly: Free</p>
+      </div>
+    </div>
+
+    <div class="sales" id="bike2">
+      <h3> Schwinn Bonafide $349.99</h3>
+      <img class="bikes" src="images/bike-SchwinnBonafied-218x218.jpg" alt="Schwinn Bonafide bike bicycle mountain" title="Schwinn Bonafide">
+      <div class="bikeInfo">
+        <p>Speeds: 24</p>
+        <p>Frame: 17" w/ suspension forks</p>
+        <p>Wheels: 29" x 2.1"</p>
+        <p>Brakes: Mechanical disc</p>
+        <p>Assembly: $69.99</p>
+      </div>
+    </div>
+
+    <div class="sales" id="bike3">
+      <h3> Vilano Blackjack $299.00</h3>
+      <img class="bikes" src="images/bike-VilanoBlackjack-218x218.jpg" alt="Vilano Blackjack bike bicycle mountain" title="Vilano Blackjack">
+      <div class="bikeInfo">
+        <p>Speeds: 24</p>
+        <p>Frame: 17"</p>
+        <p>Wheels: 29" x 2.25"</p>
+        <p>Brakes: Mechanical disc</p>
+        <p>Assembly: $69.99</p>
       </div>
 
-    </header>
+    </div>
 
-    <nav>
 
-      <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
 
-      <ul id="mainNav" class="hidden flex-container">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="adventures.html">Adventure Tours</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="sales.html">Sales</a></li>
-        <li><a href="service.html">Service Center</a></li>
-        <li class="lastNav"><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+  </main>
 
-    <main id="adventureContent">
-      <section id="takeActionA">
-        <h2 id="htaA">Meet Our Guides!</h2>
-        <picture id="picTAA">
-          <source media="(min-width: 1150px)" srcset="images/Button-R-100x100.png">
-          <source media="(min-width: 768px)" srcset="images/Button-R-100x100.png">
-          <source media="(min-width: 375px)" srcset="images/Button-R-50x50.png">
-          <img src="images/Button-R-50x50.png" alt="button for bike repair and service" title="Bike Repair">
-        </picture>
-        <p id="textAA">Limited time $20 bike tune-up!</p>
-      </section>
+  <aside id="contactinfo">
+    <span>The Mountain Spoke <br> 3950 Valley Commons Drive, Bozeman, MT 59718 <br> (999) 999-9999 <br> contact@TheMountainSpoke.com</span>
+  </aside>
 
-      <section id="tour1">
-        <h2 id="hT1">Mountain Bikes for Sale!</h2>
-        <picture id=picT1>
-          <source media="(min-width: 1150px)" srcset="images/yellow-cartoon-transparent-323x250.png">
-          <source media="(min-width: 768px)" srcset="images/yellow-cartoon-transparent-323x250.png">
-          <source media="(min-width: 375px)" srcset="images/Button-B-50x50.png">
-          <img src="images/Button-B-50x50.png" alt="button for bike sales" title="Bike Sales">
-        </picture>
-        <p id="textT1">Need a bike?</p>
-      </section>
+  <footer>
+    <span class="footer-bar"> The Mountain Spoke | <a href="resources.html">Resources</a> | <a href="video.html">Video</a> </span>
+  </footer>
 
-      <section id="tour2">
-        <h2 id="hT2">Trips of a Lifetime!</h2>
-        <picture id="picT2">
-          <source media="(min-width: 1150px)" srcset="images/mountainbike-tour-340x250.jpg">
-          <source media="(min-width: 768px)" srcset="images/mountainbike-tour-340x250.jpg">
-          <source media="(min-width: 375px)" srcset="images/Button-T-50x50.png">
-          <img src="images/Button-T-50x50.png" alt="button for bike tours" title="Bike Tours">
-        </picture>
-        <p id="textT2">Seeking adventure?</p>
-      </section>
-    </main>
+  <script src="scripts/hamburger.js"></script>
+  <script type="text/rocketscript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    <aside id="contactinfo">
-      <span>The Mountain Spoke <br> 3950 Valley Commons Drive, Bozeman, MT 59718 <br> (999) 999-9999 <br> contact@TheMountainSpoke.com</span>
-    </aside>
 
-    <footer>
-      <span class="footer-bar"> The Mountain Spoke | <a href="resources.html">Resources</a> | <a href="video.html">Video</a> </span>
-    </footer>
+</body>
 
-    <script src="scripts/hamburger.js"></script>
+<script>
+  var urlString, urlArray, pageHREF, menu, i, currentURL;
+  urlString = document.location.href;
+  urlArray = urlString.split('/');
+  pageHREF = urlArray[urlArray.length - 1];
 
-  </body>
-
-  <script>
-    var urlString, urlArray, pageHREF, menu, i, currentURL;
-    urlString = document.location.href;
-    urlArray = urlString.split('/');
-    pageHREF = urlArray[urlArray.length - 1];
-
-    if (pageHREF !== "") {
-      menu = document.querySelectorAll('ul#mainNav li a');
-      for (i = 0; i < menu.length; i++) {
-        currentURL = (menu[i].getAttribute('href'));
-        menu[i].parentNode.className = '';
-        if (currentURL === pageHREF) {
-          menu[i].parentNode.className = 'active';
-        }
+  if (pageHREF !== "") {
+    menu = document.querySelectorAll('ul#mainNav li a');
+    for (i = 0; i < menu.length; i++) {
+      currentURL = (menu[i].getAttribute('href'));
+      menu[i].parentNode.className = '';
+      if (currentURL === pageHREF) {
+        menu[i].parentNode.className = 'active';
       }
     }
-
-  </script>
+  }
+</script>
 
 </html>
