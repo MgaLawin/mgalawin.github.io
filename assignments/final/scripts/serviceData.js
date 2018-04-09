@@ -28,5 +28,5 @@ xmlhttp.onreadystatechange = function () {
     var drivetrain = $('#drivetrain').text(myObj.services[4].drivetrain);
   }
 };
-xmlhttp.open("GET", "https://mgalawin.github.io/final/scripts/bikeService.json", true);
+xmlhttp.open("GET", "https://mgalawin.github.io/assignments/final/scripts/bikeService.json", true);
 xmlhttp.send();
