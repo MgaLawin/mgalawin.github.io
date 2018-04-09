@@ -575,6 +575,30 @@ input.resetBtn {
 
 /*-----SEVICE-CENTER-CONTENT-----*/
 
+th,
+td {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+td {
+  font-weight: bolder;
+}
+
+table {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 5%;
+  border-spacing: 0;
+  border: 1px solid black;
+  color: black;
+}
+
+.tableHeading {
+  text-align: center;
+  font-size: 1.5em;
+}
+
 /*-----CONTACT-US-CONTENT-----*/
 
 .googleMap {

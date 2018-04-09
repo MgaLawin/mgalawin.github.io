@@ -6,6 +6,7 @@ xmlhttp.onreadystatechange = function () {
     var platinum = $('#platinum').text(myObj.services[0].platinum);
     var diamond = $('#diamond').text(myObj.services[0].diamond);
     var gold = $('#gold').text(myObj.services[0].gold);
+    var brass = $('#brass').text(myObj.services[0].brass);
 
     var forkFull = $('#forkFull').text(myObj.services[1].forkFull);
     var forkSeal = $('#forkSeal').text(myObj.services[1].forkSeal);
@@ -22,7 +23,7 @@ xmlhttp.onreadystatechange = function () {
     var hubService = $('#hubService').text(myObj.services[3].hubService);
     var wheelBuild = $('#wheelBuild').text(myObj.services[3].wheelBuild);
 
-    var brake = $('#brake').text(myObj.services[4].brake);
+    var brakes = $('#brakes').text(myObj.services[4].brakes);
     var chain = $('#chain').text(myObj.services[4].chain);
     var deraileur = $('#deraileur').text(myObj.services[4].deraileur);
     var drivetrain = $('#drivetrain').text(myObj.services[4].drivetrain);
