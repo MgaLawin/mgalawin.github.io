@@ -359,6 +359,14 @@ footer a {
 
 /*-----EVENTS-CONTENT-----*/
 
+#gridTable {
+  border: none;
+  width: 361px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
 #takeActionE {
   height: 530px;
   border-style: solid;
@@ -529,16 +537,6 @@ input.resetBtn {
   font-size: 24px;
 }
 
-/*
-#eventsPicLarge {
-  border-style: solid;
-  border: 2px solid rgb(130, 196, 247);
-  align-items: center;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-*/
-
 /*-----SALES-CONTENT-----*/
 
 .hidden > div {
@@ -652,11 +650,6 @@ form#comments2 {
 }
 
 /*-----VIDEO-CONTENT-----*/
-
-video::-webkit-media-controls-panel {
-  display: flex !important;
-  opacity: 1 !important;
-}
 
 #vid {
   display: block;

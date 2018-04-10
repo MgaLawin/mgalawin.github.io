@@ -201,6 +201,7 @@
     font-size: 25px;
   }
   /*-----EVENTS-CONTENT-----*/
+
   #eventsContent {
     display: grid;
     grid-template-columns: 354px 12px 354px;
