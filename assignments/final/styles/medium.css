@@ -231,6 +231,7 @@
   /*-----RESOURCES-CONTENT-----*/
   /*-----VIDEO-CONTENT-----*/
   #vid {
-    width: 480px;
+    width: 700px;
+    margin-bottom: 20px;
   }
 }
