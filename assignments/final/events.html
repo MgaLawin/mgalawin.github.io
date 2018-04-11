@@ -57,74 +57,75 @@ $(function() {}
   </nav>
 
   <main>
-    <table id="gridTable">
-    <section class="eventsContent" id="eventsContent">
-      <section class="box1" id="takeActionE">
-        <h2 id="htaE">Cycle the Continenal Divide!</h2>
-        <picture id="cDivide">
-          <source media="(min-width: 1150px)" srcset="images/continentalDivide-350x263.jpg">
-          <source media="(min-width: 768px)" srcset="images/continentalDivide-350x263.jpg">
-          <source media="(min-width: 375px)" srcset="images/continentalDivide-350x263.jpg">
-          <img src="images/continentalDivide-350x263.jpg" alt="biking the continental divide" title="Bike Near Lake on Continental Divide Trail">
-        </picture>
-        <p id="textAE1">Ready for the greatest ride yet?</p>
-        <p id="textAE2">Location: Banff, AB, CA to Antelope Wells, NM, USA</p>
-        <p id="textAE3">Duration: Late June to Early October</p>
-        <p id="textAE4">Requirements: Party of 3, bike in excellent condition, camping gear</p>
-        <p id="textAE5">Costs: $40,000 for two guides, $10,000 for spare parts and food</p>
-      </section>
+    <div id="grid1">
+      <section id="eventsContent">
+        <section class="box1" id="takeActionE">
+          <h2 id="htaE">Cycle the Continenal Divide!</h2>
+          <picture id="cDivide">
+            <source media="(min-width: 1150px)" srcset="images/continentalDivide-340x263.jpg">
+            <source media="(min-width: 768px)" srcset="images/continentalDivide-340x263.jpg">
+            <source media="(min-width: 375px)" srcset="images/continentalDivide-340x263.jpg">
+            <img src="images/continentalDivide-340x263.jpg" alt="biking the continental divide" title="Bike Near Lake on Continental Divide Trail">
+          </picture>
+          <p id="textAE1">Ready for the greatest ride yet?</p>
+          <p id="textAE2">Location: Banff, AB, CA to Antelope Wells, NM, USA</p>
+          <p id="textAE3">Duration: Late June to Early October</p>
+          <p id="textAE4">Requirements: Party of 3, bike in excellent condition, camping gear</p>
+          <p id="textAE5">Costs: $40,000 for two guides, $10,000 for spare parts and food</p>
+        </section>
 
-      <section class="box2" id="cDregForm">
-        <h2 id="hCdR">Registration Form</h2>
-        <section id="cDregForm2">
-          <form action="thanks.html" method="get" enctype="multipart/form-data" name="attend" id="registration">
+        <section class="box2" id="cDregForm">
+          <h2 id="hCdR">Registration Form</h2>
+          <section id="cDregForm2">
+            <form action="thanks.html" method="get" enctype="multipart/form-data" name="attend" id="registration">
 
-            <fieldset id="contactInfo">
+              <fieldset id="contactInfo">
 
-              <legend><span>Personal Contact Information</span></legend>
+                <legend><span>Personal Contact Information</span></legend>
 
-              <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-z -._]{3,99}" required></label>
+                <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-z -._]{3,99}" required></label>
 
-              <label><span>Email: </span><input name="email" type="email" value="" placeholder="user@domain.com" required></label>
+                <label><span>Email: </span><input name="email" type="email" value="" placeholder="user@domain.com" required></label>
 
-              <label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="1235551234" required></label>
+                <label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="1235551234" required></label>
 
-              <label><span>Date of Birth: </span><input name="dob" type="date" value="" required></label>
+                <label><span>Date of Birth: </span><input name="dob" type="date" value="" required></label>
 
-              <label><span>State / Province and Country: </span><input name="location" type="text" value="" placeholder="WA, US or AB, Canada" required></label>
+                <label><span>State / Province and Country: </span><input name="location" type="text" value="" placeholder="WA, US or AB, Canada" required></label>
 
-            </fieldset>
+              </fieldset>
 
-            <fieldset id="comments">
+              <fieldset id="comments">
 
-              <legend><span>Special Accommodations or Comments</span></legend>
-              <label><span>Comments:</span></label>
-              <textarea cols="30" rows="4" name="addInfo" id="addInfoField" form="registration"></textarea>
+                <legend><span>Special Accommodations or Comments</span></legend>
+                <label><span>Comments:</span></label>
+                <textarea cols="30" rows="4" name="addInfo" id="addInfoField" form="registration"></textarea>
 
-            </fieldset>
+              </fieldset>
 
-            <input type="submit" value="Submit" class="submitBtn">
-            <input type="hidden" value="Storm Alert Submission" name="subject">
-            <input name="redirect" type="hidden" value="thanks.html">
+              <input type="submit" value="Submit" class="submitBtn">
+              <input type="hidden" value="Storm Alert Submission" name="subject">
+              <input name="redirect" type="hidden" value="thanks.html">
 
-            <input type="reset" value="Reset" class="resetBtn">
+              <input type="reset" value="Reset" class="resetBtn">
 
-          </form>
+            </form>
+          </section>
+        </section>
+
+        <section class="box3" id="events1">
+          <h2 id="hCdE">Upcoming Events</h2>
+          <picture id=picCdE1>
+            <source media="(min-width: 1150px)" srcset="images/bozeman1-203x152.jpg">
+            <source media="(min-width: 768px)" srcset="images/bozeman1-203x152.jpg">
+            <source media="(min-width: 375px)" srcset="images/bozeman1-203x152.jpg">
+            <img src="images/bozeman1-203x152.jpg" alt="bike near mountain lake" title="Bike at a Lake">
+          </picture>
+          <p id="textCdE">Check back often for more great events!</p>
         </section>
       </section>
+    </div>
 
-      <section class="box3" id="events1">
-        <h2 id="hCdE">Upcoming Events</h2>
-        <picture id=picCdE1>
-          <source media="(min-width: 1150px)" srcset="images/bozeman1-203x152.jpg">
-          <source media="(min-width: 768px)" srcset="images/bozeman1-203x152.jpg">
-          <source media="(min-width: 375px)" srcset="images/bozeman1-203x152.jpg">
-          <img src="images/bozeman1-203x152.jpg" alt="bike near mountain lake" title="Bike at a Lake">
-        </picture>
-        <p id="textCdE">Check back often for more great events!</p>
-      </section>
-    </section>
-    </table>
   </main>
 
   <aside id="contactinfo">

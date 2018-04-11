@@ -359,12 +359,8 @@ footer a {
 
 /*-----EVENTS-CONTENT-----*/
 
-#gridTable {
-  border: none;
-  width: 361px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
+#grid1 {
+  margin: 0 auto;
 }
 
 #takeActionE {
@@ -445,7 +441,7 @@ form#registration {
 fieldset {
   background-color: #94c0eb;
   border-radius: 50px 15px;
-  margin: 1.5em 0;
+  margin: 20px;
   border: black solid 1px;
 }
 
