@@ -126,9 +126,7 @@
 
   #takeActionA {
     height: 144px;
-    width: 99%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     border-style: solid;
     border: 2px solid rgb(130, 196, 247);
     display: grid;
@@ -203,23 +201,23 @@
   /*-----EVENTS-CONTENT-----*/
   #eventsContent {
     display: grid;
-    grid-template-columns: 354px 12px 354px;
+    grid-template-columns: auto 354px 5px 5px 354px auto;
     grid-template-rows: 530px 2px 278px 6px;
     margin-bottom: 10px;
   }
 
   .box1 {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1;
   }
 
   .box2 {
-    grid-column: 3;
+    grid-column: 5;
     grid-row: 1;
   }
 
   .box3 {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 3;
   }
 
