@@ -61,37 +61,50 @@ $(function() {}
 
     <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931441040634!2d-111.09291154861431!3d45.672276627452895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523177360453" style="border:0" allowfullscreen></iframe>
 
-    <section id="contactForm">
-      <form action="thanks.html" method="get" enctype="multipart/form-data" name="attend" id="contactUs">
+    <p id="callUs">
+      Please contact us with any questions. We look forward to serving all of your mountain biking needs.
+    </p>
 
-        <fieldset id="contactInfo2">
+    <section id="contacting">
+      <section id="contactInfo1">
+        <h1>The Mountain Spoke</h1>
+        <p>3950 Valley Commons Drive</p>
+        <p>Bozeman, MT 59718</p>
+        <p>(999)999-9999</p>
+        <h2>contact@TheMountainSpoke.com</h2>
+      </section>
 
-          <legend><span>Personal Contact Information</span></legend>
+      <section id="contactForm">
+        <form action="thanks.html" method="get" enctype="multipart/form-data" name="attend" id="contactUs">
 
-          <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-z -._]{3,99}" required></label>
+          <fieldset id="contactInfo2">
 
-          <label><span>Email: </span><input name="email" type="email" value="" placeholder="user@domain.com" required></label>
+            <legend><span>Personal Contact Information</span></legend>
 
-          <label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="1235551234" required></label>
+            <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-z -._]{3,99}" required></label>
 
-        </fieldset>
+            <label><span>Email: </span><input name="email" type="email" value="" placeholder="user@domain.com" required></label>
 
-        <fieldset id="comments2">
+            <label><span>Phone: </span><input name="phone" type="tel" value="" placeholder="1235551234" required></label>
 
-          <legend><span>Question or Comment</span></legend>
-          <label><span>Question or Comment:</span></label>
-          <textarea cols="30" rows="4" name="addInfo" id="addInfoField" form="contactUs"></textarea>
+          </fieldset>
 
-        </fieldset>
+          <fieldset id="comments2">
 
-        <input type="submit" value="Submit" class="submitBtn">
-        <input type="hidden" value="Storm Alert Submission" name="subject">
-        <input name="redirect" type="hidden" value="thanks.html">
+            <legend><span>Question or Comment</span></legend>
+            <label><span>Question or Comment:</span></label>
+            <textarea cols="30" rows="4" name="addInfo" id="addInfoField" form="contactUs"></textarea>
 
-        <input type="reset" value="Reset" class="resetBtn">
-      </form>
+          </fieldset>
+
+          <input type="submit" value="Submit" class="submitBtn">
+          <input type="hidden" value="Storm Alert Submission" name="subject">
+          <input name="redirect" type="hidden" value="thanks.html">
+
+          <input type="reset" value="Reset" class="resetBtn">
+        </form>
+      </section>
     </section>
-
   </main>
 
   <aside id="contactinfo">
